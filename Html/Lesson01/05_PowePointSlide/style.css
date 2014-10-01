@@ -1,0 +1,43 @@
+body{
+    background-image: url(/Pics/background1.png);
+    background-repeat: no-repeat;
+	width: 797px;
+	height: 493px;
+}
+
+li{
+	color: #F4C266;	
+}
+
+h1{
+	margin-left: 10px;
+    color: #F4C266;
+}
+
+h2{
+	color: white;
+}
+
+div{
+    color: white;
+	margin-right: 60px;
+}
+
+span{
+	color: #F4C266;
+}
+
+.insideDescriptions{
+	color: #FBEFCC;
+	background-color: #252522;
+	border: 1px solid gray;
+	margin-left: 20px;
+	margin-right: 44px;
+	padding: 0px;
+	margin: 0px;
+}
+
+p, pre {
+	margin: 0px;
+	font-size: 20px;
+}

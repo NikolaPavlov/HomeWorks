@@ -1,0 +1,6 @@
+http://www.wikihow.com/Run-a-.Jar-Java-File
+
+For running .jar in Linux use this: 
+	java -jar (filename.jar)
+For creating you can use this:
+	jar cf jar-file input-file(s)

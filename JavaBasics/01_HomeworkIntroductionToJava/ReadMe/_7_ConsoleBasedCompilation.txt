@@ -1,0 +1,4 @@
+For Linux:
+1. Open the directory where the file is located.
+2. javac (file) ---> to compile 
+3. java (filename) ---> to run , type only the filename withouth .class!
