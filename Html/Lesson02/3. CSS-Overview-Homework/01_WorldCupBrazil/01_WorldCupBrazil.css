@@ -1,0 +1,32 @@
+.main {
+	font-size: 0.6em;
+}
+
+.main {
+	background-color: #009744;
+	width: 444px;
+}
+
+table {
+	border-collapse: collapse;
+	font-size: 1em;
+}
+
+thead {
+	background-color: #F8CA14;
+	font-size: 1.2em;
+}
+
+.circleButton {
+	border-radius: 25px;
+	
+}
+
+td:nth-child(odd)  {
+	width: 130px;
+}
+
+td:nth-child(even) {
+	width: auto;
+	text-align: center;
+}
