@@ -1,0 +1,130 @@
+body {
+	/*	background-image: url(ColorKitchen.png);*/
+	margin 0 0 0 0;
+	background-color: gray;
+}
+body > header {
+	background: linear-gradient(to right, red 33.3%, green 33.3%, green 66.7%, blue 66.7%);
+	color: yellow;
+	font-size: 2em;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	padding-top: 0px;
+	padding-bottom: 15px;
+	width: 100%;
+	margin-bottom: 30px;
+}
+aside {
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 18px;
+	padding: 10px, 10px;
+	margin: 30px, 15px;
+	width 100%;
+	float: left;
+}
+aside header {
+	font-size: 1.2em;
+	font-weight: bolder;
+	text-decoration: underline;
+	padding-left: 5px;
+}
+ul {
+	color: black;
+	list-style-type: none;
+	margin-top: 5px;
+	width: 100%;
+}
+li:nth-child(1):hover {
+	background-color: #FF0000;
+}
+li:nth-child(2):hover {
+	background-color: #FFA500;
+}
+li:nth-child(3):hover {
+	background-color: #FFFF00;
+}
+li:nth-child(4):hover {
+	background-color: #008000;
+}
+li:nth-child(5):hover {
+	background-color: #0000FF;
+}
+li:nth-child(6):hover {
+	background-color: #800080;
+}
+li a,
+li:hover a {
+	color: black;
+	cursor: default;
+	text-decoration: none;
+}
+a:visited {
+	color: gray;
+}
+/* section */
+
+article a {
+	color: gray;
+}
+section {
+	display: block;
+	font-size: 20px;
+	margin: 30px 25px 30px 285px;
+}
+section article {
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 18px 18px 18px 18px;
+	margin-bottom: 20px;
+	padding: 15px 15px;
+}
+section article div:first-line {
+	font-style: italic;
+	margin-bottom: 100px;
+}
+section article div::first-letter {
+	font-size: 4em;
+}
+section div {
+	margin-top: 0;
+}
+section header {
+	color: white;
+	border-radius: 9px 9px;
+	font-size: 30px;
+	height: 50px;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+footer {
+	font-style: italic;
+	margin-top: 10px;
+}
+span:lang(la) {
+	color: blue;
+	font-style: italic;
+}
+span:lang(la):before,
+span:lang(la):after {
+	content: "\"";
+
+}
+#webColors {
+	background-color: #FF0000;
+}
+#webSafeColors {
+	background-color: #FFA500;
+	color: black;
+}
+#RGB {
+	background-color: #FFFF00;
+	color: black;
+}
+#RGBA {
+	background-color: #008000;
+}
+#HSLHSV {
+	background-color: #0000FF;
+}
+#lorem {
+	background-color: #800080;
+}
