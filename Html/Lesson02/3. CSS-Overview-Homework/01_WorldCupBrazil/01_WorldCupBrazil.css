@@ -1,32 +1,55 @@
-.main {
-	font-size: 0.6em;
-}
 
 .main {
 	background-color: #009744;
-	width: 444px;
 }
 
 table {
 	border-collapse: collapse;
+	border-radius: 10px;
 	font-size: 1em;
+	width:97%;
+	margin: 10px;
+	background-color: white;
+	text-align: center;
 }
 
 thead {
 	background-color: #F8CA14;
-	font-size: 1.2em;
+	font-size: 1.6em;
 }
 
-.circleButton {
-	border-radius: 25px;
-	
+.circleButtonRed {
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background-color:red;
+	font-size: 0.5em;
 }
 
-td:nth-child(odd)  {
-	width: 130px;
+.circleButtonGreen{
+	width:30px;
+	height: 30px;
+	border-radius: 15px;
+	background-color:green;
+	font-size: 0.5em;
 }
 
-td:nth-child(even) {
-	width: auto;
-	text-align: center;
+.even {
+	background-color: #CBCBCB;
+}
+
+td:nth-child(1) {
+	text-align: right;
+}
+
+td:nth-child(3) {
+	text-align: left;
+}
+
+td:nth-child(5) {
+	text-align: right;
+}
+
+td:nth-child(7) {
+	text-align: left;
 }
