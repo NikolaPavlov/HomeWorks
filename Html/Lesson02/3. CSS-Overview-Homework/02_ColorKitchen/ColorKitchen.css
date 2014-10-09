@@ -1,7 +1,8 @@
 body {
-	/*	background-image: url(ColorKitchen.png);*/
+		background-image: url("Pics/colorful_dots_on_black.jpg");
+	
 	margin 0 0 0 0;
-	background-color: gray;
+/*	background-color: gray;*/
 }
 body > header {
 	background: linear-gradient(to right, red 33.3%, green 33.3%, green 66.7%, blue 66.7%);
@@ -29,28 +30,34 @@ aside header {
 	padding-left: 5px;
 }
 ul {
+	padding-right:40px;
 	color: black;
-	list-style-type: none;
+	list-style-image: url("Pics/chafka.png");
 	margin-top: 5px;
-	width: 100%;
 }
 li:nth-child(1):hover {
 	background-color: #FF0000;
+	border-radius: 8px;
 }
 li:nth-child(2):hover {
 	background-color: #FFA500;
+	border-radius: 8px;
 }
 li:nth-child(3):hover {
 	background-color: #FFFF00;
+	border-radius: 8px;
 }
 li:nth-child(4):hover {
 	background-color: #008000;
+	border-radius: 8px;
 }
 li:nth-child(5):hover {
 	background-color: #0000FF;
+	border-radius: 8px;
 }
 li:nth-child(6):hover {
 	background-color: #800080;
+	border-radius: 8px;
 }
 li a,
 li:hover a {
@@ -122,9 +129,9 @@ span:lang(la):after {
 #RGBA {
 	background-color: #008000;
 }
-#HSLHSV {
+#\#HSLHSV {
 	background-color: #0000FF;
 }
-#lorem {
+#\#lorem {
 	background-color: #800080;
 }
