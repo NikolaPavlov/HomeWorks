@@ -1,0 +1,59 @@
+body {
+	font-size: 21px;
+}
+
+table, tr, td, th {
+	border: 1px solid black;
+}
+
+th {
+	font-size: 2.9em;
+	padding: 20px 50px;
+}
+
+td {
+	padding: 10px;
+	width: 150px;
+	height: 150px;
+}
+
+.innerTable td {
+	text-align: center;
+	height: 50%;
+	padding: 25px 0px;
+}
+
+.topLeft {
+	vertical-align: top;
+	text-align: left;
+}
+
+.topRight {
+	vertical-align: top;
+	text-align: right;
+}
+
+.right {
+	text-align: right;
+	font-size: 1.4em;
+}
+
+.top {
+	vertical-align: top;
+	text-align: center;
+}
+
+.bottom {
+	vertical-align: bottom;
+	text-align: center;
+}
+
+.bottomRight {
+	vertical-align: bottom;
+	text-align: right;
+}
+
+.bottomLeft {
+	vertical-align: bottom;
+	text-align: left;
+}
