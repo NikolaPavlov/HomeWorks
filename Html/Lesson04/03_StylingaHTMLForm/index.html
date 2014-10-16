@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Styling HTML Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css"></head>
+<body>
+<!-- form -->
+	<form method="post" action="script"/>
+
+	<!-- 1st block -->
+
+	<div class="headers">Step 1: Your setails</div>
+	<div class="section">
+		<label for="name">Name</label>
+		<input type="text" id="name" placeholder="Firs and last name"/>
+	</div>
+	<div class="section">
+		<label for="email">Email</label>
+		<input type="text" id="email" placeholder="example@domain.com"/>
+	</div>
+	<div class="section">
+		<label for="phone">Phone</label>
+		<input type="text" id="phone" placeholder="e.g. +447500000000"/>
+	</div>
+
+	<!-- 2nd block -->
+
+	<div class="headers">Step 1: Delivery address</div>
+		<div class="section">
+			<label for="address">Address</label>
+			<textarea id="address" rows="4"></textarea>
+		</div>
+	
+	<div class="section">
+		<label for="postCode">PostCode</label>
+		<input type="text" id="posteCode"/>
+	</div>
+	<div class="section">
+		<label for="country">Country</label>
+		<input type="text" id="country"/>
+	</div>
+
+	<!-- 3rd block -->
+
+	<div class="headers">Step1: Card details</div>
+	<div class="section">
+		<label>Card type</label>
+		<!-- radio buttons -->
+		<div class="radio">
+			<input type="radio" name="city" value="visa"/>
+			<img src="Pics/visa.jpg" alt="visaLogo">
+			VISA
+			<input type="radio" name="city" value="amex"/>
+			<img src="Pics/amex.jpg" alt="amex">
+			AmEx
+			<input type="radio" name="city" value="master">
+			<img src="Pics/master.jpg" alt="master">
+			Mastercard
+		</div>
+	</div>
+		<!-- end radio buttons -->
+	<div class="section">
+		<label for="cardNumber">Card number</label>
+		<input type="text" id="cardNumber"/>
+	</div>
+	<div class="section">
+		<label for="secCode">Security code</label>
+		<input type="text" id="secCode"/>
+	</div>
+	<div class="section">
+		<label for="nameOnCard">Name on Card</label>
+		<input type="text" id="nameOnCard" placeholder="exact name as on the card"/>
+	</div>
+	<!-- button -->
+	<div id="button">
+		<a href="#">BUY IT!</a>
+	</div>
+
+</body>
+</html>

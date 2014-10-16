@@ -1,0 +1,90 @@
+body{
+	font-family: verdana;
+}
+
+#wrapper {
+	border-top: 5px dotted yellow;
+	border-left: 5px dashed red;
+	border-right: 5px solid green;
+	border-bottom: 5px double blue;
+	width: 750px;
+	box-shadow: 20px 20px 10px 4px gray;
+}
+
+.shadowText {
+	text-align: center;
+    font-size: 47px;
+    text-shadow: 10px 10px 10px grey;
+    margin: 30px;
+
+}
+
+.rainbowText {
+	text-align: center;
+	box-shadow:
+	0 0 0 5px #0000ff,
+    0 0 0 10px #008000,
+    0 0 0 15px yellow,
+    0 0 0 20px #ff0000;
+    border-radius: 80px;
+    padding: 5px 20px;
+    padding-bottom: 20px;
+    margin: 40px;
+}
+
+.notButtons {
+	background-color: #D8921A;
+	border: 3px outset #FFA600;
+	margin: 0 5px;
+	padding: 0px 20px;
+}
+
+.shadowText2 {
+	font-size: 20px;
+	text-shadow:10px 10px 20px grey;
+	margin: 10px;
+	margin-bottom: 20px;
+}
+
+#firstCircle {
+    position: absolute;
+    top: 185px;
+    left: 585px;
+    width: 12px;
+    height: 12px;
+    background: gray;
+    opacity: 0.8;
+    border: 2px dashed white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px gray;
+}
+
+#secondCircle {
+	position: absolute;
+    top:140px;
+    left:650px;
+    width: 30px;
+    height: 30px;
+    background: gray;
+    opacity: 0.8;
+    border: 3px dashed white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px gray;
+
+}
+
+#bigCircle {
+	position: absolute;
+	top:70px;
+    left:730px;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background: gray;
+    opacity: 0.8;
+    border: 3px dashed white;
+    border-radius: 30px;
+    box-shadow: 0 0 0 4px gray;
+}

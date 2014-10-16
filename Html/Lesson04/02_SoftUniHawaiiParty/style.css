@@ -1,0 +1,76 @@
+/*place gradient behind the background*/
+#gradient {
+	background: radial-gradient(ellipse at top left, #1e5799 0%,#ffffff 0%,#ffffff 27%,#207cca 50%,#0060db 100%);
+	width: 900px;
+	height: 600px;
+}
+
+#background {
+	background-image:url("Pics/HawaiiBackground.png");
+	width: 900px;
+	height: 600px;
+}
+
+/*position the nerds */
+#vladoG{
+    position: absolute;
+    top: 240px;
+    left: 65px;
+    width:230px;
+    height: 340px;
+}
+
+#petia{
+    position: absolute;
+    top: 210px;
+    left: 190px;
+    width:210px;
+    height: 350px;
+}
+
+#tedi{
+    position: absolute;
+    top: 350px;
+    left: 260px;
+    width:170px;
+    height: 230px;
+}
+
+#nakov{
+    position: absolute;
+    top: 160px;
+    left: 430px;
+    width:190px;
+    height: 400px;
+}
+
+#alex{
+    position: absolute;
+    top: 210px;
+    left: 510px;
+    width:190px;
+    height: 360px;
+}
+
+#vladoK{
+    position: absolute;
+    top: 220px;
+    left: 650px;
+    width:220px;
+    height: 355px;
+}
+
+/*custom font damn that`s cool */
+@font-face {
+	font-family: animated;
+	src: url("Pics/Animated.ttf");
+}
+
+p {
+	position: absolute;
+	top: 20px;
+	left: 480px;
+	font-family: animated;
+	font-size: 48px;
+	color: #fdbc21;
+}
