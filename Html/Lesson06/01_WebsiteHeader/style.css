@@ -1,0 +1,145 @@
+* {
+padding: 0;
+margin: 0;
+font-family: sans-serif;
+color: white;
+font-size: 10pt;
+}
+
+#wrapper {
+background-color: #234465;
+margin: 0 auto;
+height: 100px;
+}
+
+#logo {
+margin-top: 10px;
+float:left;
+cursor: pointer;
+}
+
+#main-bar {
+float: right;
+display: inline-flex;
+margin: 20px 60px 10px 0;
+}
+
+#user {
+margin: auto 5px auto 35px;
+}
+
+#user > a {
+text-decoration: none;
+}
+
+#search {
+margin: auto 90px auto 5px;
+}
+
+#search-bar {
+height: 30px;
+border-radius: 5px 0px 0px 5px;
+border: none;
+color: black;
+padding-left: 5px;
+}
+
+#button {
+float: right;
+background: url("../img/search.png") no-repeat scroll 7px center #FFFFFF;
+width: 30px;
+height: 30px;
+border-width: 0px 0px 0px 1px;
+border-radius: 0px 5px 5px 0px;
+cursor: pointer;
+}
+
+#navigation {
+margin-left: 300px;
+display: inline;
+text-align: center;
+}
+
+/* nav menu */
+#navigation-menu {
+line-height: 36px;
+}
+
+#navigation-menu :hover {
+cursor: pointer;
+border-radius: 5px;
+}
+
+#navigation-menu ul {
+margin: 0;
+padding: 0 20px 10px 20px;
+border-radius: 10px;
+list-style: none;
+position: relative;
+display: inline-table;
+}
+
+#navigation-menu ul:after {
+content: "";
+clear: both;
+display: block;
+}
+
+#navigation-menu>ul>li {
+text-transform: uppercase;
+margin-left: 5px;
+padding: 0 10px;
+}
+
+#navigation-menu ul li {
+float: left;
+}
+
+#navigation-menu ul li:hover {
+background: #428BCA;
+outline: none;
+}
+
+#navigation-menu ul li a {
+display: block;
+text-decoration: none;
+color: #fff;
+}
+
+#navigation-menu ul ul {
+background: #234465;
+border: 1px solid rgba(0, 0, 0, 0.15);
+border-radius: 5px;
+text-align: left;
+text-transform: none;
+font-weight: 400;
+position: absolute;
+width: 300px;
+top: 100%;
+margin-left: -10px;
+margin-top: -10px;
+padding: 0;
+display: none;
+}
+
+#navigation-menu ul li:hover > ul {
+display: block;
+}
+
+#navigation-menu ul ul li {
+float: none;
+border-bottom: 1px solid #575f6a;
+position: relative;
+}
+
+#navigation-menu ul ul li:last-child {
+border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+#navigation-menu ul ul li a {
+padding: 0 10px;
+}
+	
+#navigation-menu ul ul li a:hover {
+background: #FF9C00;
+}
