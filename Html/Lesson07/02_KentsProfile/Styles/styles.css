@@ -1,0 +1,36 @@
+﻿body {
+    font-size:10px;
+}
+section {
+    background-color:#FFC0CB;
+    margin:20px;
+    border-radius:20px;
+    padding:20px;
+}
+progress {
+    height:20px;
+    width:70%;
+}
+img {
+    max-width:100%;
+    display:block;
+}
+audio {
+    width:100%;
+}
+.black {
+    background-color:black;
+    margin-bottom:5px;
+    padding-left:2px;
+    padding-right:2px;
+}
+.inside {
+    margin-top:50px;
+    margin-bottom:54px;
+}
+span {
+    font-size:1.5em;
+}
+video {
+    width:430px;
+}

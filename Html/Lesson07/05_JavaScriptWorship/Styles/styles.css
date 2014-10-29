@@ -1,0 +1,31 @@
+﻿body {
+}
+.main {
+    width:245px;
+    height:265px;
+    border:dashed 3px red;
+    padding:0px;
+}
+h1 {
+    font-size:26px;
+    padding:0px;
+    margin:0px;
+    text-align:center;
+    margin-top:28px;
+}
+.inside {
+    width:135px;
+    height:135px;
+    background-color:#F1DA4E;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+    
+}
+span {
+    font-size:61px;
+    display:inline-block;
+    margin-left:70px;
+    margin-top:70px;
+
+}

@@ -1,0 +1,40 @@
+﻿body {
+    font-size:10px;
+}
+.main {
+    background-color:black;
+    padding:20px;
+    padding-bottom:25px;
+    border-radius:20px;
+}
+div {
+    display:inline-block;
+}
+h1 {
+    font-size:3em;
+    font-style:italic;
+    color:#F2C106;
+    text-align:center;
+}
+a {
+    display:block;
+    text-decoration:none;
+    color:white;
+    font-size:2.5em;
+}
+.links {
+    float:right;
+    margin-left:15px;
+}
+.frame {
+    float:right;
+    margin-right:15px;
+}
+iframe {
+    width:180px;
+    height:135px;
+    padding:0px;
+    border:none;
+    overflow:hidden;
+    border:2px solid #F2C106;
+}
