@@ -1,0 +1,135 @@
+body {
+	background-color: #7797FD;
+	width: 700px;
+	margin: 0 auto;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+body header a span{
+	color: white;
+}
+
+body #wrapper header nav ul {
+	list-style-type: none;
+}
+
+	body #wrapper header nav ul li {
+		display: inline-block;
+		background-color: #FFFFFF;
+		border: 1px solid black;
+		padding: 4px 14px;
+		margin-right: 10px;
+	}
+
+nav {
+	text-align: right;
+}
+
+section {
+	display: inline-block;
+	width: 70%;
+	float: left;
+	margin-top: 0;
+	vertical-align: top;
+}
+
+article {
+	/*width: 66%;*/
+	margin: 1%;
+	background-color: #E2E9FD;
+	border: 1px solid black;
+	padding: 1%;
+	float: left;
+	/*display: inline-block;*/
+	vertical-align: top;
+}
+
+aside {
+	width: 27%;
+	float: left;
+	background-color: #E2E9FD;
+	border: 1px solid black;
+	padding: 1%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 5px;
+}
+
+	aside ul {
+		list-style-type: none;
+		padding-left: 1%;
+	}
+
+		aside ul li {
+			padding: 5px;
+		}
+
+footer {
+	display: inline-block;
+	width: 100%;
+	background-color: #E2E9FD;
+	text-align: center;
+	vertical-align: bottom;
+	margin: 5%;
+	margin-left: 0;
+}
+
+	footer h2 {
+		padding-bottom: 0;
+		background-color: red;
+	}
+
+
+/*==========================
+  ====media shits here======
+  ==========================
+*/
+
+@media all and (max-width: 960px) {
+	body {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 780px) {
+	aside {
+		width: 100%;
+	}
+
+		aside ul {
+			width: 90%;
+			margin: 0 auto;
+		}
+
+		aside ul li {
+			width: 22%;
+			display: inline-block;
+			vertical-align: top;
+			text-align: center;
+			padding-bottom: 10%;
+		}
+
+	section {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 640px) {
+
+	body #wrapper header nav ul li {
+		display: inline-block;
+		background-color: #FFFFFF;
+		/*padding: 4px 14px;*/
+		width: 90%;
+		text-align: center;
+		margin-right: 20%;
+	}
+
+	aside ul li {
+		width: 100%;
+	}
+}
