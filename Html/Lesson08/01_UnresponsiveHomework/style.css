@@ -80,7 +80,6 @@ footer {
 
 	footer h2 {
 		padding-bottom: 0;
-		background-color: red;
 	}
 
 
@@ -120,13 +119,43 @@ footer {
 
 @media all and (max-width: 640px) {
 
+	body #wrapper header a img {
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+		padding-left: 10%;
+	}
+
+	body header a span {
+		border: 1px solid red;
+		width: 80%;
+		margin: 0 auto;
+		color: red;
+	}
+	
+	body #wrapper header {
+		width: 100%;
+		margin: 0 auto;
+		/*margin-right: 50%;*/
+	}
+
+	body #wrapper header nav {
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	body #wrapper header nav ul {
+		width: 90%;
+		margin: 0 auto;
+	}
+
 	body #wrapper header nav ul li {
 		display: inline-block;
 		background-color: #FFFFFF;
 		/*padding: 4px 14px;*/
-		width: 90%;
+		width: 80%;
 		text-align: center;
-		margin-right: 20%;
 	}
 
 	aside ul li {
