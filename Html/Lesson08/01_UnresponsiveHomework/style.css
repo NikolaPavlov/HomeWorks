@@ -127,10 +127,8 @@ footer {
 	}
 
 	body header a span {
-		border: 1px solid red;
 		width: 80%;
 		margin: 0 auto;
-		color: red;
 	}
 	
 	body #wrapper header {
