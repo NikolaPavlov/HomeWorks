@@ -1,11 +1,11 @@
 function divisionBy3(num) {
 	var sumDigits = 0;
 
-	while (num != 0) {
-		sumDigits += num % 10;
+	while (num > 0) {
+		sumDigits += (num % 10);
 		num = Math.floor(num / 10);
 	}
-	return sumDigits;
+	return Math.floor(sumDigits);
 }
 
 //output

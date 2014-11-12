@@ -1,7 +1,7 @@
 function bitChecker (num) {
 	var numAsStr = num.toString(2);
 	var thirdBit = numAsStr[numAsStr.length - 4];
-	if (thirdBit == "1") {
+	if (thirdBit === "1") {
 		return true;
 	} else {
 		return false;
