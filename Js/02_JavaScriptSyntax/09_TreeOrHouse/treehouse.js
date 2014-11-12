@@ -11,6 +11,7 @@ function treeHouseCompare(arr) {
 	}
 }
 
+//output
 treeHouseCompare([3, 2]);
 treeHouseCompare([3, 3]);
 treeHouseCompare([4, 5]);

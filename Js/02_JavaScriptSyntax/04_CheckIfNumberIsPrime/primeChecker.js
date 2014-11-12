@@ -19,6 +19,7 @@ function isPrime(num) {
 	};
 }
 
+//output
 console.log(isPrime(7));
 console.log(isPrime(254));
 console.log(isPrime(587));

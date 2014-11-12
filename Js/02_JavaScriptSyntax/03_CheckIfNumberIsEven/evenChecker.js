@@ -6,6 +6,7 @@ function evenNumber(number) {
 	}
 }
 
+//output
 evenNumber(3);
 evenNumber(127);
 evenNumber(588);

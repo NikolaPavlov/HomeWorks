@@ -3,6 +3,7 @@ function roundNumber(number) {
 	console.log(Math.round(number));
 }
 
+//output
 roundNumber(22.7);
 roundNumber(12.3);
 roundNumber(58.7);
