@@ -10,13 +10,13 @@ function findMostFreqWord (str) {
 			if (strArr[i] === strArr[j]) {
 				counter++;
 				word = strArr[i];
-			};
+			}
 			if (counter > maxCounter) {
 				maxCounter = counter;
-			};
-		};
+			}
+		}
 		counter = 1;
-	};
+	}
 	console.log(word + " -> " + maxCounter + "times");
 }
 

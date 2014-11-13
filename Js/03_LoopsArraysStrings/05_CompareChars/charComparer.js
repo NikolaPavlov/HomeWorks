@@ -10,7 +10,7 @@ function compareChars(arr1, arr2) {
 	}
 	if (equal) {
 		console.log("Equal");
-	};
+	}
 }
 
 var arr1 = ['1', 'f', '1', 's', 'g', 'j', 'f', 'u', 's', 'q'];

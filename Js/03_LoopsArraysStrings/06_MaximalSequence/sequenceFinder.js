@@ -12,7 +12,7 @@ function findMaxSequence(arr) {
 			if (localSequence >= maxSequence) {
 				maxSequence = localSequence;
 				maxElement = localElement;
-			};
+			}
 		} else {
 			localSequence = 1;
 		}

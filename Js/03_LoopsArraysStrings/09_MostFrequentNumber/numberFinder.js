@@ -7,14 +7,14 @@ function findMostFreqNum (arr) {
 		for (var j = i + 1; j < arr.length; j++) {
 				if (arr[i] === arr[j]) {
 					counter++;
-				};
-			};	
+				}
+			}
 		if (counter > maxCounter) {
 			maxCounter = counter;
 			number = arr[i];
-		};
+		}
 		counter = 1;
-	};
+	}
 	console.log(number + "(" + maxCounter + " times)");
 }
 

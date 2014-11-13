@@ -1,18 +1,10 @@
-//check for (var i = 1; i < arr.lenght; i++) {
-	
-// };
-
-function sortArray (arr) {
-	var min = Math.pow(2, 53)-1;
-	var resultsArr = [];
-
-	for (var i = 0; i < arr.lenght - 1; i++) {
-		for (var j = i + 1; j < arr.lenght; j++) {
-			
-		};
-	};
-
-
+function sortArray(arr) {
+	arr.sort(orderBy);
+	console.log(arr.join(", "));
 }
 
+function orderBy(firstNumber, secondNumber) {
+	return firstNumber - secondNumber;
+}
 sortArray([5, 4, 3, 2, 1]);
+sortArray([12, 12, 50, 2, 6, 22, 51, 712, 6, 3, 3]);
