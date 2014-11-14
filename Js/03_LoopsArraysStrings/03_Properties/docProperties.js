@@ -1,11 +1,9 @@
 function displayProperties() {
-	var sortedProp = [];
-	for (var word in document) {
-		sortedProp.push(word);
+	var properties = [];
+	for (var p in window) {
+		properties.push(p);
 	}
-	sortedProp.sort();
-	for (var word in sortedProp) {
-		console.log(sortedProp[word]);
-	}
+	properties.sort();
+	document.getElementById("target").innerHTML = properties.join('<br>');
 }
 displayProperties();
