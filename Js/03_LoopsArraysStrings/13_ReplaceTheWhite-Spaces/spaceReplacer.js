@@ -1,7 +1,7 @@
 function replaceSpaces (str) {
 	var strArr = str;
 
-	strArr = strArr.replace(/\s+/g, "&nbsp;");
+	strArr = strArr.replace( ("/\s+/g"), "&nbsp;");
 	console.log(strArr);
 }
 
