@@ -1,20 +1,3 @@
-// function findMinAndMax(arr) {
-// 	var min = Math.MAX_VALUE;
-// 	var max = Math.MIN_VALUE;
-
-// 	for (var i = 0; i < arr.length - 1; i++) {
-// 		if (arr[i] > max) {
-// 			max = arr[i];
-// 		}
-
-// 		if (arr[i] < min) {
-// 			min = arr[i];
-// 		};
-// 	}
-// 	return console.log(min)
-// }
-
-
 function findMinAndMax (arr) {
 	var resultsArr = arr.sort(function(a, b){return a - b});
 	var min = resultsArr[0];
