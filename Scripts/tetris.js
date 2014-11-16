@@ -24,7 +24,7 @@ var shapes = [
 
 //we can add random generator for the colors = easy
 var colors = [
-    'black', 'magenta', 'pink', 'yellow', 'red', 'green', 'purple'
+    'blue', 'magenta', 'pink', 'yellow', 'red', 'green', 'purple'
 ];
 
 // creates a new 4x4 shape in global variable 'current'
@@ -71,10 +71,7 @@ function tick() {
     else {
         freeze();
         clearLines();
-        if (lose) {
-            newGame();
-            return false;
-        }
+        gameOver();
         newShape();
     }
 }
@@ -176,6 +173,13 @@ function valid( offsetX, offsetY, newCurrent ) {
         }
     }
     return true;
+}
+
+function gameOver() {
+    if(lose) {
+        alert("You've lost! Start a new game!");
+        newGame();
+    }
 }
 
 function newGame() {
