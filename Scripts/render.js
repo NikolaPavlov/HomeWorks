@@ -9,13 +9,13 @@ var blockHeight = height / rows;
 
 // draw a single square at (x, y)
 function drawBlock( x, y ) {
-    ctx.fillRect( blockWidth * x, blockHeight * y, blockWidth - 1 , blockHeight - 1 );
+    ctx.fillRect( blockWidth * x, blockHeight * y, blockWidth - 1 , blockHeight - 1 ); //(x, y, width, height)
     ctx.strokeRect( blockWidth * x, blockHeight * y, blockWidth - 1 , blockHeight - 1 );
 }
 
 // draws the board and the moving shape
 function render() {
-    ctx.clearRect( 0, 0, width, height );
+    ctx.clearRect( 0, 0, width, height ); //clear the board
 
     ctx.strokeStyle = 'black';
     for ( var x = 0; x < cols; ++x ) {
@@ -29,6 +29,8 @@ function render() {
 
     // ctx.fillStyle = 'red';
     // ctx.strokeStyle = 'black';
+
+    //fill with color
     for ( var y = 0; y < 4; ++y ) {
         for ( var x = 0; x < 4; ++x ) {
             if ( current[ y ][ x ] ) {

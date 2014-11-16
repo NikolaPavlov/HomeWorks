@@ -21,6 +21,8 @@ var shapes = [
     [ 0, 1, 0, 0,
       1, 1, 1 ]
 ];
+
+//we can add random generator for the colors = easy
 var colors = [
     'black', 'magenta', 'pink', 'yellow', 'red', 'green', 'purple'
 ];
@@ -44,7 +46,8 @@ function newShape() {
             }
         }
     }
-    // position where the shape will evolve
+    // position where the shape will evolve,
+    // we can easy add random here to the currentX
     currentX = 5;
     currentY = 0;
 }
