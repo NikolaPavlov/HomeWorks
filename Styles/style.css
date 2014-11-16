@@ -1,6 +1,93 @@
+body, html, header, h1 {
+    margin: 0px;
+	font-family: Calibri;
+}
+
+@font-face {
+  font-family: 'ThisNight';
+  src: url("../fonts/ThisNight.ttf") format("truetype"); }
+
+body {
+    width: 1080px;
+    margin: 0px auto;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px #808080;
+}
+
+
+    body header {
+        height: 100px;
+        width: 1040px;
+        background-color: blue;
+        color: white;
+        text-align: center;
+        margin: 0px auto;
+		padding: 5px;
+    }
+
+        body header h1 {
+            font-size: 72px;
+			font-family: ThisNight;
+        }
+
 
 canvas {
-	border: 1px solid red;
-	margin-left: 0 auto;
-	margin-right: 0 auto;
+    background-image: url('../Images/background.png');
+    border: 1px solid red;
+    margin: 10px;
+	margin-left: 190px;
 }
+
+body aside {
+    float: right;
+    margin: 20px;
+}
+
+    body aside nav {
+    }
+	
+	body aside div.board {
+	float: right;
+	width: 300px;
+	border: 1px solid black;
+                border-radius: 15px;
+                margin: 10px;
+				margin-right: 40px;
+                    text-align: center;
+					padding-left: 20px;
+					padding-right: 20px;
+					
+	}
+	
+	body aside div.board span{
+		font-size: 48px;
+		
+	}
+
+        body aside nav ul {
+            list-style-type: none;
+            padding: 20px;
+			margin-top: 110px;
+        }
+
+            body aside nav ul li {
+			width: 300px;
+			height: 30px;
+                border: 1px solid black;
+                border-radius: 15px;
+                padding: 20px;
+                margin: 20px;
+                    text-align: center;
+                    background-color: #8f0000;
+            }
+
+                body aside nav ul li:hover {
+                    background-color: blue;
+                }
+
+                body aside nav ul li a {
+                    text-decoration: none;
+                    font-size: 32px;
+                    text-align: center;
+                    color: white
+                }

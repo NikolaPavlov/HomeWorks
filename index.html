@@ -1,11 +1,28 @@
-<html>
+﻿<html>
 <head>
 	<meta charset="UTF-8">
 	<title>tetris</title>
 	<link rel="stylesheet" href="Styles/style.css">
 </head>
 <body>
-	<canvas width='300' height='600'></canvas>
+    <header>
+        <h1>T e t r i s</h1>
+    </header>
+	<canvas width='300' height='480'></canvas>
+    <aside>
+        <div class="board">
+            <span>Score: </span><span id="score">0</span>
+        </div>
+		<br/>
+		
+        <nav>
+            <ul>
+            	<li id="start" ><a href="#" onclick="newGame()">Start Game</a></li>
+            	<li><a href="about.html" >About</a></li>
+            	<li><a href="how.html">Now to write this game</a></li>
+            </ul>
+        </nav>
+    </aside>
 	<script src='Scripts/tetris.js'></script>
 	<script src='Scripts/render.js'></script>
 	<script src='Scripts/controler.js'></script>
