@@ -47,7 +47,7 @@ function newShape() {
         }
     }
     // position where the shape will evolve
-    currentX = 5;
+    currentX = Math.floor(Math.random() * (cols - 3)); //random spawn position
     currentY = 0;
 }
 
@@ -69,8 +69,8 @@ function tick() {
         // if the element settled
     else {
         freeze();
-        clearLines();
         gameOver();
+        clearLines();
         newShape();
     }
 }
@@ -102,10 +102,8 @@ function rotate(current) {
 
 // check if any lines are filled and clear them
 function clearLines() {
-
     for (var y = rows - 1; y >= 0; --y) {
         var rowFilled = true;
-
         for (var x = 0; x < cols; ++x) {
             if (board[y][x] == 0) {
                 rowFilled = false;
@@ -116,15 +114,12 @@ function clearLines() {
             //function for point
             score = addScore(score);
             document.getElementById("score").innerHTML = score;
-            
-            
-
             for (var yy = y; yy > 0; --yy) {
                 for (var x = 0; x < cols; ++x) {
                     board[yy][x] = board[yy - 1][x];
-
                 }
             }
+            lineClearSound();
             ++y;
         }
     }
@@ -133,7 +128,6 @@ function addScore(num) {
     num += 100;
     return num;
 }
-
 
 function keyPress(key) {
     switch (key) {
@@ -187,6 +181,12 @@ function valid(offsetX, offsetY, newCurrent) {
         }
     }
     return true;
+}
+
+function lineClearSound() {
+    var sound = document.getElementById("remove-row");
+    sound.load();
+    sound.play();
 }
 
 function gameOver() {
