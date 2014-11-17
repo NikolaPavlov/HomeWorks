@@ -70,13 +70,7 @@ function tick() {
     else {
         freeze();
         clearLines();
-
-        if (lose) {
-            alert("You Lose!");
-            location.reload();
-            //newGame();
-            return false;
-        }
+        gameOver();
         newShape();
     }
 }
@@ -164,16 +158,6 @@ function keyPress(key) {
                 current = rotated;
             }
             break;
-
-        case 'esc':
-            lose = true;
-            if (lose) {
-                alert("You Lose!");
-                location.reload();
-            }
-
-        case 'pause':
-            alert("Pause");
     }
 }
 
@@ -204,6 +188,14 @@ function valid(offsetX, offsetY, newCurrent) {
     }
     return true;
 }
+
+function gameOver() {
+    if (lose) {
+        alert("You've lost! Start a new game!");
+        newGame();
+    }
+}
+
 
 function newGame() {
     clearInterval(interval);
