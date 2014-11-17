@@ -47,7 +47,7 @@ function newShape() {
         }
     }
     // position where the shape will evolve
-    currentX = Math.floor(Math.random() * (cols - 3)); //random spawn position
+    currentX = 5;
     currentY = 0;
 }
 
