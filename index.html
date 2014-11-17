@@ -3,6 +3,7 @@
 	<meta charset="UTF-8">
 	<title>tetris</title>
 	<link rel="stylesheet" href="Styles/style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -17,14 +18,19 @@
 		
         <nav>
             <ul>
-            	<li id="start" ><a href="#" onclick="newGame()">Start Game</a></li>
-            	<li><a href="about.html" >About</a></li>
-            	<li><a href="how.html">Now to write this game</a></li>
+            	<li id="start"><button onclick="newGame()">Start Game</button></li>
+            	<li><button><a href="about.html" target="blank">About</a></button></li>
+            	<li><button><a href="how.html" target="blank">Now to write this game</a></button></li>
+                <li><button id="music-toggle">Play / Pause Music</button></li>
             </ul>
         </nav>
     </aside>
+    <audio id="play-music" autostart="false">
+        <source src="Sounds/tetris-theme.mp3">
+    </audio>
 	<script src='Scripts/tetris.js'></script>
 	<script src='Scripts/render.js'></script>
 	<script src='Scripts/controler.js'></script>
+    <script src="Scripts/musicToggler.js"></script>
 </body>
 </html>
