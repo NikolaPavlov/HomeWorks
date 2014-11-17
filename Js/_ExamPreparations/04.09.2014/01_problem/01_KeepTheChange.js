@@ -21,8 +21,14 @@ function calcTip (arr) {
 		tip = 0.05 * bill;
 	}
 	console.log(tip.toFixed(2));
+	// console.log(typeof(bill));
+	// console.log(typeof(tip));
+	// console.log("bill" + " " + bill);
+	// console.log("tip" + " " + tip);
 }
+
 
 calcTip([1230.83, "drunk"]);
 calcTip([120.44, 'happy']);   
 calcTip([79.33, 'bored']);
+calcTip([100, 'married']);
