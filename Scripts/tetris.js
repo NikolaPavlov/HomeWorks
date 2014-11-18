@@ -129,6 +129,10 @@ function addScore(num) {
     return num;
 }
 
+function removeScore() {
+    document.getElementById("score").innerHTML = 0;
+}
+
 function keyPress(key) {
     switch (key) {
         case 'left':
@@ -174,7 +178,9 @@ function valid(offsetX, offsetY, newCurrent) {
                   || x + offsetX < 0
                   || y + offsetY >= rows
                   || x + offsetX >= cols) {
-                    if (offsetY == 1) lose = true; // lose if the current shape at the top row when checked
+                    if (offsetY == 1) {
+                        lose = true;
+                    } // lose if the current shape at the top row when checked
                     return false;
                 }
             }
@@ -183,15 +189,16 @@ function valid(offsetX, offsetY, newCurrent) {
     return true;
 }
 
-function lineClearSound() {
-    var sound = document.getElementById("remove-row");
-    sound.load();
-    sound.play();
-}
+//function lineClearSound() {
+//    var sound = document.getElementById("remove-row");
+//    sound.load();
+//    sound.play();
+//}
 
 function gameOver() {
     if (lose) {
         alert("You've lost! Start a new game!");
+        removeScore();
         newGame();
     }
 }
