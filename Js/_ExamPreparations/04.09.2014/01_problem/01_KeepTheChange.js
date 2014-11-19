@@ -28,6 +28,6 @@ function calcTip (arr) {
 }
 
 
-calcTip([1230.83, "drunk"]);
+// calcTip([1230.83, "drunk"]);
 // calcTip([120.44, 'happy']);   
 // calcTip([79.33, 'bored']);
