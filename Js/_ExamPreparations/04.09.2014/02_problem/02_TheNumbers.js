@@ -1,14 +1,19 @@
-//how to remove first and second element from arr 
-function trim (arr) {
-	var nums = arr.split(/\D+/g);
-	// arr.splice(0, 1);
-	// arr.splice(arr.length - 1, arr.length);
-
-	for (var i = 0; i < nums.length; i++) {
-		nums[i] = Number(nums[i]).toString(16);	
+function solve(arr) {
+	var numbers = arr[0].split(/D+/g);
+	// /\D+/
+	var result = [];
+	for (var i = 0; i < numbers.length; i += 1) {
+		if (numbers[i] != '') {
+			var temp = parseInt(numbers[i]).toString(16).toUpperCase();
+			while (temp.length < 4) {
+				temp = '0' + temp;
+			}
+			temp = '0x' + temp;
+			result.push(temp);
+		}
 	}
-
-	console.log(nums);
+	console.log(result.join('-'));
 }
 
-trim('[5tffwj(//*7837xzc2---34rlxXP%$]');
+solve('482vMWo(*&^%$213;k!@41341((()&^>><///]42344p;e312');
+// solve('5tffwj(//*7837xzc2---34rlxXP%$”.');

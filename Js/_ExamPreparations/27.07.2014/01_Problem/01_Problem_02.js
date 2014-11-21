@@ -51,5 +51,5 @@ function checkFibNums(numForCheck, maxNum) {
 
 
 
-// printTable([2, 6]);
+printTable([2, 6]);
 // printTable([55,56]);

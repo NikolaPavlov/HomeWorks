@@ -1,7 +1,11 @@
-function revealTriangles (input) {
+function revealTriangles (arr) {
 	//translate input into arr
 	var output = [];
-	output = input[0].split(' ');
+
+
+		output.push(arr[11]);
+
+
 	console.log(output);
 }
 
@@ -10,7 +14,7 @@ function revealTriangles (input) {
 
 
 
-//test here bitchez
-revealTriangles('abcdexgh
-bbbdxxxh
-abcxxxxx');
+// test here bitchez
+revealTriangles('abcdexgh',
+'bbbdxxxh',
+'abcxxxxx');

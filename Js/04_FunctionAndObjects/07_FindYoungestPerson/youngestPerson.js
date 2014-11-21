@@ -2,6 +2,7 @@ function findYoungestPerson (persons) {
 	var minAge = Number.MAX_VALUE;
 	var minAgeName = '';
 	var minAgeLastName = '';
+	
 	for (var i = 0; i < persons.length; i++) {
 		var age = Number(persons[i].age);
 		if (age < minAge) {

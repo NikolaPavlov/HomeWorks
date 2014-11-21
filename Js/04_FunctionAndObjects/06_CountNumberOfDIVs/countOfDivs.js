@@ -1,22 +1,22 @@
-function countDivs (html) {
-	return html.match(/<div/g).length;
+function countDivs(html) {
+    return html.match(/<div/g).length;
 }
 
-countDivs('<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>index</title>
-    <script src="/yourScript.js" defer></script>
-</head>
-<body>
-    <div id="outerDiv">
-        <div
-    class="first">
-            <div><div>hello</div></div>
-        </div>
-        <div>hi<div></div></div>        
-        <div>I am a div</div>
-    </div>
-</body>
-</html>');
+console.log(countDivs('<!DOCTYPE html>\n' +
+    '<html>\n' +
+    '<head lang="en">\n' +
+    '<meta charset="UTF-8">\n' +
+    '<title>index</title>\n' +
+    '<script src="/yourScript.js" defer></script>\n' +
+    '</head>\n' +
+    '<body>\n' +
+    '<div id="outerDiv">\n' +
+    '<div\n' +
+    'class="first">\n' +
+    '<div><div>hello</div></div>\n' +
+    '</div>\n' +
+    '<div>hi<div></div></div>\n' +
+    '<div>I am a div</div>\n' +
+    '</div>\n' +
+    '</body>\n' +
+    '</html>'));

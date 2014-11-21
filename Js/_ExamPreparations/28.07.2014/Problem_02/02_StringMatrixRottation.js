@@ -24,7 +24,18 @@ function loadMatrix (input) {
 	};
 }
 
-//rotete the matrix
+//rotete the matrix, change rows and cols
+function rotateMatrix90 (matrix) {
+	var newMatrix = [];
+	var row, newRow;
+	var col, newCol;
+
+	for (var col = 0; col < matrix[0].length; col++) {
+		newRow = col;
+		newMatrix[newRow] = [];
+
+	};
+}
 
 
 

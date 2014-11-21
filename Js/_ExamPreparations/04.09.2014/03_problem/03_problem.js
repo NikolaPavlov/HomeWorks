@@ -1,24 +1,41 @@
-function stars (arr) {
-	//split the 5 lines of input 
+function stars(arr) {
 	var firstLine = arr[0].split(/\s+/g);
 	var secondLine = arr[1].split(/\s+/g);
 	var thirdLine = arr[2].split(/\s+/g);
-	var fourLine = arr[3].split(/\s+/g);
-	var fiveLine = arr[4].split(/\s+/g);
-
-	var firstSystemX = Number(firsLine[1]);
-	var firstSystemY = Number(firstLine[2]);
-
-	console.log(firstSystemX);
-	console.log(firstSystemY);
-
+	var fourthLine = arr[3].split(/\s+/g);
+	var fifthLine = arr[4].split(/\s+/g);
+	var firstSystem = firstLine[0];
+	var firstSystemX = parseFloat(firstLine[1]);
+	var firstSystemY = parseFloat(firstLine[2]);
+	var secondSystem = secondLine[0];
+	var secondSystemX = parseFloat(secondLine[1]);
+	var secondSystemY = parseFloat(secondLine[2]);
+	var thirdSystem = thirdLine[0];
+	var thirdSystemX = parseFloat(thirdLine[1]);
+	var thirdSystemY = parseFloat(thirdLine[2]);
+	var normadyX = parseFloat(fourthLine[0]);
+	var normadyY = parseFloat(fourthLine[1]);
+	var move = parseInt(fifthLine);
+	for (var i = 0; i <= move; i++) {
+		//
+		if (normadyX <= firstSystemX + 1 && normadyX >= firstSystemX - 1 && normadyY >= firstSystemY - 1 && normadyY <= firstSystemY + 1) {
+			console.log(firstSystem.toLowerCase());
+		} else if (normadyX <= secondSystemX + 1 && normadyX >= secondSystemX - 1 && normadyY >= secondSystemY - 1 && normadyY <= secondSystemY + 1) {
+			console.log(secondSystem.toLowerCase());
+		} else if (normadyX <= thirdSystemX + 1 && normadyX >= thirdSystemX - 1 && normadyY >= thirdSystemY - 1 && normadyY <= thirdSystemY + 1) {
+			console.log(thirdSystem.toLowerCase());
+		} else {
+			console.log("space")
+		}
+		normadyY += 1;
+	}
 }
 
 
 
 //input
 stars(['Sirius 3 7
-Alpha-Centauri 7 5
-Gamma-Cygni 10 10
-8 1
-6']);
+			Alpha - Centauri 7 5
+			Gamma - Cygni 10 10
+			8 1
+			6 ']);
