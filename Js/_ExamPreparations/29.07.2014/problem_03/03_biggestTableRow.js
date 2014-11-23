@@ -1,3 +1,4 @@
+
 function biggestRowSum (arrStr) {
 	// var regex = /\d+\.\d+|-/g;
 	var regex = /\-?[\d\.]+/g;
@@ -54,3 +55,4 @@ biggestRowSum(['<table>',
 '<tr><td>Plovdiv</td><td>17.2</td><td>12.3</td><td>6.4</td></tr>',
 '<tr><td>Bourgas</td><td>-</td><td>3000.3</td><td>-</td></tr>',
 '</table>']);
+
