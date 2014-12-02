@@ -45,6 +45,9 @@ function sortStudents(arr) {
 		return avgSum;
 	}
 }
+
+
+
 // sortStudents(['Peter Nikolov | PHP | 5.50 | 8',
 // 	'Maria Ivanova | Java | 5.83 | 7',
 // 	'Ivan Petrov | PHP | 3.00 | 2',

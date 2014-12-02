@@ -1,5 +1,5 @@
 function solve(arr) {
-	var numbers = arr[0].split(/D+/g);
+	var numbers = arr.split(/\D+/g);
 	// /\D+/
 	var result = [];
 	for (var i = 0; i < numbers.length; i += 1) {
@@ -15,5 +15,5 @@ function solve(arr) {
 	console.log(result.join('-'));
 }
 
-solve('482vMWo(*&^%$213;k!@41341((()&^>><///]42344p;e312');
+// solve('482vMWo(*&^%$213;k!@41341((()&^>><///]42344p;e312');
 // solve('5tffwj(//*7837xzc2---34rlxXP%$”.');
