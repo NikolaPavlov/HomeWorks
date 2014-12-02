@@ -36,12 +36,18 @@
 // Remove all below code before submitting to the judge system!
 // ------------------------------------------------------------
 
-var arr = [];
-require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-}).on('line', function (line) {
-    arr.push(line);
-}).on('close', function () {
-    revealTriangles(arr);
-});
+// var arr = [];
+// require('readline').createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// }).on('line', function (line) {
+//     arr.push(line);
+// }).on('close', function () {
+//     revealTriangles(arr);
+// });
+
+revealTriangles([
+    'abcdexgh',
+    'bbbdxxxh',
+    'abcxxxxx'
+]);

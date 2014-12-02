@@ -46,7 +46,7 @@ function concerts(input) {
 // Remove all below code before submitting to the judge system!
 // ------------------------------------------------------------
 
-var arr = [];
+ar arr = [];
 require('readline').createInterface({
     input: process.stdin,
     output: process.stdout
