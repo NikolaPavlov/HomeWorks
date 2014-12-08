@@ -1,12 +1,20 @@
 <?php 
-	$num = 1234;
+	$input = 1234;
+	// $input = 15;
+	$resultFound = false;
 
-	for ($i=100; $i < 1000; $i++) { 
-		if ((num % 10 != (num/10) % 10) &&
-			((num/10) % 10 != (num/100) % 10)) {
-			echo "$i,";
+	for ($i=100; $i < min($input, 1000); $i++) { 
+		$firstDigit = $i % 10;
+		$secondDigit = ($i / 10) % 10;
+		$thirdDigit = ($i / 100) % 10;
+		if (($firstDigit != $secondDigit) && 
+			($secondDigit != $thirdDigit) &&
+			($firstDigit != $thirdDigit)) {
+			echo "$i,<br>";
+			$resultFound = true;
 		}
 	}
-	echo 'test';
-
+	if (!$resultFound) {
+		echo "no";
+	}
  ?>
