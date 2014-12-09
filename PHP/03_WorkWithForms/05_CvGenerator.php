@@ -44,8 +44,8 @@
 					<option value="Intermediate">Intermediate</option>
 					<option value="Expert">Expert</option>
 				</select><br>
-				<input type="button" name="removeLang" value="Remove Language" onclick="removeLang()">
-				<input type="button" name="addLang" value="Add Language" onclick="addLang()">
+				<input type="button" name="removeLang" value="Remove Language" onclick="removePLang()">
+				<input type="button" name="addLang" value="Add Language" onclick="addPLang()">
 			</fieldset>
 			<!-- fourth form -->
 			<fieldset>
@@ -197,7 +197,7 @@ if (isset($_POST['firstName']) &&
 					</thead>
 					<tbody>
 						<tr>
-							<td>data</td>
+							<td>javaScriptHERE!</td>
 						</tr>
 					</tbody>
 				</table>
@@ -205,5 +205,8 @@ if (isset($_POST['firstName']) &&
 		</tr>
 	</tbody>
 </table>
+
+<!-- javascript`s bellow for dynamic add table rows. It's invisble :D -->
+
 	</body>
 </html>

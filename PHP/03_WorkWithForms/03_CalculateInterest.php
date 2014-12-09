@@ -1,3 +1,17 @@
+<!-- Problem 3. Calculate Interest
+Write a PHP script CalculateInterest.php which generates an
+HTML page that contains:
+- An input text field to hold the amount of money
+- Radio buttons to choose the currency
+- An input text field to enter the compound annual interest amount
+- A dropdown menu to choose the period of time.
+- A submit button. When the information is submitted, the script
+should print out the amount of money you will have after the selected
+period, rounded to 2 decimal places. Semantic HTML is required.
+Styling is not required.
+After the 6th month we have 1061.520150601 USD in our account. We round
+the result and add the symbol "$" for USD. The output is $ 1061.52. -->
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -8,7 +22,7 @@
 		<?php
 			echo '<form method="GET">';
 					echo '<div>';
-							echo '<label>Enter Amount</label>';
+					echo '<label>Enter Amount</label>';
 							echo '<input type="text" name="amount">';
 					echo '</div>';
 					echo '<input type="radio" value="USD" name="currency" checked><label>USD</label>';
