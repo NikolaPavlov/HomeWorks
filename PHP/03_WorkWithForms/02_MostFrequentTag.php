@@ -39,7 +39,7 @@ sorted by frequency. Then you must print: "Most Frequent Tag is:
 				}
 			}
 			//sort associative arr by value
-			arsort($tagsFreq);
+			arsort($tagsFreq); //Sort an associative array in descending order, according to the value
 
 			//creating the output
 			foreach ($tagsFreq as $key => $value) {
