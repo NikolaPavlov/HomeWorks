@@ -1,38 +1,57 @@
-<?php 
+<?php //71/100pts
 
-//main
-//header
-//nav
-//article
-//section
-//aside
-//footer
+	// Find all open tags with regex
+	// Extract match name and match tag
+	// Replace div with match tag
+	// Remove match name
+	// Find all closing tags and replace div in them with closing tag name
+	//...
 
-
-	$str = $_GET['html'];
+	$html = $_GET['html']; //text
 	$semanticTags = ['main', 'header', 'nav', 'article', 'section', 'aside', 'footer'];
-	print_array($str);
-	echo $str;
-	//find all open tags with regex
-	$openTagsPattern = "/<div.*?\b((id|class)\s*=\s*\"(.*?)\").*?>/";
-	preg_match_all($openTagsPattern, $str, $openingTags);
-	print_array($openingTags);
-	foreach ($openingTags[0] as $match) {
-		$attrName = $openingTags[1][0];
-		$attrValue = $openingTags[3][0];
-		// echo $attrName;
-		if (in_array($attrValue, $semanticTags)) {
-			$replaceTag = str_replace('div', $attrValue, $match);
-			$replaceTag = str_replace($attrName, '', $replaceTag);
-			$replaceTag = preg_replace("/\s+>/", '>', $replaceTag);
-			$replaceTag = preg_replace("/\s{2,}/", ' ', $replaceTag);
-			str_replace($match, $replaceTag, $str);
-			// $match = $replaceTag;
-		}
-	}
+	
+	
+	// Find all open tags with regex
+	$openTagsPattern = "/<div.*?((id|class)\s*=\s*\"(.*?)\")\s*.*?>/";
+	preg_match_all($openTagsPattern, $html, $openTags);
+	// print_array($matches);
 
-echo '<br>';
-print_array($str);
+	
+		$matchName = $openTags[1][0];
+		$matchTag = $openTags[3][0];
+		// echo $matchName;
+		// echo '<br>' . $matchTag;
+		$html = str_replace('div', $matchTag, $html);
+		$html = str_replace($matchName, '', $html);
+		$html = preg_replace('/ >/', '>', $html);
+		$html = preg_replace('/[^\S\n]+/', ' ', $html);
+	
+
+
+
+
+
+	// Find all closing tags with regex
+	$closingTagsPattern = "/<!--\s*(\w+?)\s*-->/";
+	preg_match_all($closingTagsPattern, $html, $closingTags);
+	// print_array($closingTags);
+	foreach ($closingTags as $key => $value) {
+		$closingTagForReplace = $closingTags[0][$key];
+		$html = str_replace($closingTagForReplace, '', $html);
+	}
+	
+	
+	
+	
+	echo $html;
+
+
+
+
+
+
+
+
 
 
 
