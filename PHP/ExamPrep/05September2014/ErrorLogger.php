@@ -7,7 +7,7 @@
 	$regex = "/Exception in thread \".*\" java.*\.(.*):.*\n.*?\.(.*?)\((.*?):(\d+)/";
 	
 	preg_match_all($regex, $errorLog, $matches);
-	// print_array($matches);
+	print_array($matches);
 
 	//print the output
 	$result = "";

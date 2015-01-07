@@ -4,28 +4,22 @@
 
 	$childName = $_GET['childName'];
 	$wantedPresent = $_GET['wantedPresent'];
-	$riddles = $_GET['riddles'];
+	$riddlesAsStr = $_GET['riddles'];
 
-
-
-	$childName = str_replace(' ', '-', $childName);
-	$childName = htmlspecialchars($childName);
 	$wantedPresent = htmlspecialchars($wantedPresent);
-	$riddles = explode(';', $riddles);
-	$nameLength = strlen($childName);
+	$childName = htmlspecialchars(preg_replace('/\s+/', '-', $childName));
+	$childNameLen = strlen($childName);
+	$riddles = preg_split('/;/', $riddlesAsStr, -1, PREG_SPLIT_NO_EMPTY);
+	$riddleNum = $childNameLen % count($riddles);
+	$riddle = htmlspecialchars($riddles[$riddleNum -1]);
 
-	if ($nameLength % count($riddles) == 0) {
-		$pickedRiddle = count($riddles) - 1;
+	if ($riddleNum == 0) {
+		$riddle = htmlspecialchars($riddles[count($riddles) - 1]);
 	} else {
-		$pickedRiddle = ($nameLength % count($riddles)) - 1;
+		$riddle = htmlspecialchars($riddles[$riddleNum - 1]);
 	}
-	
-	echo "\$giftOf$childName = \$[wasChildGood] ? '$wantedPresent' : '$riddles[$pickedRiddle]';";
 
-
-
-
-
+	echo "\$giftOf$childName = \$[wasChildGood] ? '$wantedPresent' : '$riddle';";
 
 
 

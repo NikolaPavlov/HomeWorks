@@ -1,6 +1,10 @@
 <?php 
 	// 100/100
 
+	// 1.Extract all posts and put their values into asociative arr
+	// 2.Sort bu dateStamp
+	// 3.Print the output
+
 	date_default_timezone_set('Europe/Sofia');
 
 	$text = $_GET['text'];
@@ -33,7 +37,6 @@
 
 	//creating the output
 	$html = "";
-	
 	foreach ($answers as $value) {
 		$html .= "<article>";
 		$author = htmlspecialchars(trim($value['author']));
@@ -68,20 +71,18 @@
 
 
 
-
-
-function print_array($arr) {
-	echo '<pre>';
-	print_r($arr);
-	echo '</pre>';
-}
-
-function sorter($a, $b){
+function sorter($a, $b) {
 	if ($a['date'] == $b['date']) {
 		return 0;
 		break;
 	}
 	return $a['date'] > $b['date'] ? -1 : 1;
+}
+
+function print_array($arr) {
+	echo '<pre>';
+	print_r($arr);
+	echo '</pre>';
 }
  ?>
 

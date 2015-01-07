@@ -1,4 +1,5 @@
 <?php 
+	// 87/100
 	
 	date_default_timezone_set('Europe/Sofia'); //---> set default timezone
 	//1. Find all numbers
@@ -8,47 +9,41 @@
 
 	$numbersString = $_GET['numbersString'];
 	$dateString = $_GET['dateString'];
+	
+	// Extract all numbers find the sum and reverse it
+	$numPattern = "/[^a-zA-Z]([0-9]+)[^a-zA-Z]/";
+	preg_match_all($numPattern, $numbersString, $matches);
 
+	$sumNums = 0;
+	foreach ($matches[1] as $match) {
+		$sumNums += $match;
+	}
+	$sumBackwards = floatval(strrev($sumNums));
 
-	$numberPattern = "/[^a-zA-Z0-9]+?([0-9]+)[^a-zA-Z0-9]+?/";
-	preg_match_all($numberPattern, $numbersString, $matchesNums);
+	// Find all dates
 	$datePattern = "/[0-9]{4}-[0-9]{2}-[0-9]{2}/";
-	preg_match_all($datePattern, $dateString, $matchesDates);
+	preg_match_all($datePattern, $dateString, $matches);
 
-	$sum = 0;
-	foreach ($matchesNums[1] as $num) {
-		$sum += intval($num);
+	$futureDates = array();
+	foreach ($matches[0] as $date) {
+		$tempDate = date_create($date);
+		date_add($tempDate, date_interval_create_from_date_string("$sumBackwards days"));
+		array_push($futureDates, $tempDate);
 	}
 
-	//reverse the sum
-	$reverse = 0;
-	while ($sum > 0){
-  		$reverse = $reverse * 10;
-  		$reverse = $reverse + $sum % 10;
- 		 $sum = (int)($sum / 10);
+
+	// Print the output
+	if (empty($matches[0])) {
+		echo '<p>No dates</p>';
+		die;
 	}
 
-	//if there is no dates exit die with msg
-	if (count($matchesDates[0]) == 0) {
-		die("<p>No dates</p>");
-		exit;
-	}
-
-	//print the output
-	$html = "";
-	$html .= '<ul>';
-	foreach ($matchesDates[0] as $key => $date) {
-		$date = new DateTime($date);
-		$date->add(new DateInterval("P" . $reverse . "D"));
-		$html .= '<li>' . $date->format('Y-m-d') . '</li>';
+	$html = '<ul>';
+	foreach ($futureDates as $futureDate) {
+		$html .= '<li>' . date_format($futureDate, 'Y-m-d') . '</li>';
 	}
 	$html .= '</ul>';
 	echo $html;
-
-
-
-
-
 
 
 

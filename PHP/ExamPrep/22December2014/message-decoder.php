@@ -1,33 +1,70 @@
 <?php 
 	//GODLIKE
 
-	// “Reply from [ip_address]: bytes=[size_in_bytes] time=[time_in_milliseconds]ms TTL=[time_to_live]”
-	// Reply from 95.101.195.91: bytes=32 time=068ms TTL=49
-
-
 	$jsonMatrix = $_GET['jsonTable'];
 	// echo $jsonMatrix;
-	$jsonDecode = json_decode($jsonMatrix);
-	// print_array($jsonDecode);
-	$columns = $jsonDecode[0];
-	$arrPings = $jsonDecode[1];
-	// print_array($arrPings);
+	// echo '<br>';
+	$jsonMatrix = json_decode($jsonMatrix);
+	// print_array($jsonMatrix);
+	$cols = $jsonMatrix[0];
 
+	$string = "";
+	foreach ($jsonMatrix[1] as $line) {
 
-	$answers = array();
+		preg_match_all('/(\d+)ms/', $line, $matches);
 
-	for ($i=1; $i < count($arrPings); $i++) { 
-		preg_match("/(\d+)ms/", $arrPings[$i], $matches);
-		// echo chr($matches[1]) . '<br>';
-		$chr = htmlspecialchars(chr($matches[1]));
-		array_push($answers, $chr);
+		if (isset($matches[1][0])) {
+			$num = $matches[1][0];
+			$char = chr($num);
+			$string .= $char;
+		}
 	}
+	
+	$stringLen = strlen($string);
+	$rows = ceil($stringLen / $cols);
 
-	$html = "";
-	$html .= "<table border='1' cellpadding='5'><tr>";
+	// Build the matrix
+	$matrix = array();
+	$char = 0;
+	for ($row=0; $row < $rows; $row++) { 
+		$matrix[] = array();
+		for ($col=0; $col < $cols; $col++, $char++) { 
+			if ($char >= $stringLen) {
+				$matrix[$row][$col] = '';
+			} else {
+				$matrix[$row][$col] = $string[$char];
+			}
+		}
+	}
+	// print_array($matrix);
+	// Print the output
+	$html = "<table border='1' cellpadding='5'>";
+	for ($row=0; $row < $rows; $row++) { 
+		$html .= '<tr>';
+		for ($col=0; $col < $cols; $col++) { 
+			// 
+			if ($matrix[$row][$col] == '*') {
+				$html .= '</tr>';
+			} elseif ($matrix[$row][$col] != '') {
+				$html .= "<td style='background:#CAF'>" . htmlspecialchars($matrix[$row][$col]) . '</td>';
+			}  elseif ($matrix[$row][$col] == '') {
+				$html .= "<td></td>";
+			} 
+		}
+		$html .= '</tr>';
+	}
+	$html .= '</table>';
 
-	$html .= "</table>";
 	echo $html;
+
+
+
+
+
+
+
+
+
 
 
 
