@@ -1,5 +1,7 @@
 <?php 
 	
+	//100pts
+
 	// date_default_timezone_set('Europe/Sofia');
 
 	//find all thursdays between two dates

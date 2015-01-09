@@ -1,5 +1,5 @@
 <?php 
-
+/*
 	//[luggage type];[room];[name];[weight]"
 	
 
@@ -34,6 +34,13 @@
 		}
 	}
 
+	// print_array($answers);
+
+
+
+
+
+
 	$answers2 = array();
 	for ($i=0; $i < count($answers) - 1; $i++) { 
 		if ($answers[$i]['type'] == $answers[$i + 1]['type']) {
@@ -43,6 +50,9 @@
 				'name' => array(),
 				'weight' => $answers[$i]['weight'] + $answers[$i+1]['weight']
 			];
+			if ($data2['weight'] > $maxWeight) {
+				break;
+			}
 			array_push($data2['name'], $answers[$i]['name']);
 			array_push($data2['name'], $answers[$i+1]['name']);
 		} else {
@@ -56,24 +66,22 @@
 		array_push($answers2, $data2);
 	}
 
+	// print_array($answers2);
+	usort($answers2, 'sortByType');
 
-print_array($answers2);
-foreach ($answers2 as $arr) {
-	// usort($arr, 'strSorter');
-	print_array($arr);
-	usort($arr, 'strSorter');
-}
-print_array($answers2);
-// echo $answers2['name'];
-// print_array($answers2[1]['name']);
-// sort($answers2[1]['name']);
-print_array($answers2[1]['name']);
+	foreach ($answers2 as $key => $arr) {
+		print_array($arr['name']);
+	}
+	
+	// echo '----------------------';
+	// print_array($answers2);
 
 
 
 
-function strSorter($a, $b) {
-	return sort($arr['name']);
+
+function sortByType($a, $b) {
+	return strcmp($a['type'], $b['type']);
 }
 
 function print_array($aArray) {
@@ -81,4 +89,71 @@ function print_array($aArray) {
     print_r($aArray);
     echo '</pre>';
 }
+*/
+
+
+//====================author solution===========================//
+
+
+$inputLuggage = $_GET['luggage'];
+$luggage = explode('C|_|', $inputLuggage);
+$luggage = array_filter($luggage);
+$filterTypeLuggage = $_GET['typeLuggage']; // arr
+$filterRoom = $_GET['room'];
+$filterMinWeight = (int)$_GET['minWeight'];
+$filterMaxWeight = (int)$_GET['maxWeight'];
+
+$luggageList = array();
+foreach ($luggage as $luggagePiece) {
+	$tempLuggagePiece = explode(';', $luggagePiece);
+	$tempType = $tempLuggagePiece[0];
+	$tempRoom = $tempLuggagePiece[1];
+	$tempWeight = floor($tempLuggagePiece[3]);
+	$tempName = $tempLuggagePiece[2];
+
+	if (!array_key_exists($tempType, $luggageList) ||
+		!array_key_exists($tempRoom, $luggageList[$tempType])) {
+		$luggageList[$tempType][$tempRoom][$tempWeight][] = $tempName;
+	} else {
+		$oldKey = key($luggageList[$tempType][$tempRoom]);
+		$newKey = ($oldKey + $tempWeight) + '';
+		$luggageList[$tempType][$tempRoom][$newKey] = $luggageList[$tempType][$tempRoom][$oldKey];
+		$luggageList[$tempType][$tempRoom][$newKey][] = $tempName;
+		unset($luggageList[$tempType][$tempRoom][$oldKey]);
+	}
+}
+
+ksort($luggageList);
+print_array($luggageList);
+
+// Print the output
+$html = "<ul>";
+foreach ($luggageList as $type => $rooms) {
+	ksort($rooms);
+	if (in_array($type, $filterTypeLuggage)) {
+			$html .= '<li><p>' . $type . '</p>';
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function print_array($aArray) {
+ 	echo '<pre>';
+    print_r($aArray);
+    echo '</pre>';
+}
+
  ?>

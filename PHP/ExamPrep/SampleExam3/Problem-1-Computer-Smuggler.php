@@ -1,4 +1,7 @@
 <?php 
+
+	//60/100pts
+
 	//1CPU + 1ROM + 1RAM + 1VIA = 1Comp = 420lv
 	// 1cpu = 85lv;
 	// 1rom = 45lv;

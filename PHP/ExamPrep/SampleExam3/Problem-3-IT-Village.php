@@ -1,4 +1,7 @@
 <?php 
+
+	// 14/100pts
+	
 	//game board is 4x4
 	//clockwise
 

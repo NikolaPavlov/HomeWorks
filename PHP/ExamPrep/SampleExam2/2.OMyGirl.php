@@ -1,5 +1,7 @@
 <?php 
 
+	//0/100pts
+
 	$text = $_GET['text'];
 	$key = $_GET['key'];
 

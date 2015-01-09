@@ -4,7 +4,7 @@
 	$pattern = "/<td>\s*(.*?)\s*<\/td>\s*<td>\s*(.*?)\s*<\/td>\s*<td>\s*(.*?)\s*<\/td>\s*<td>\s*(.*?)\s*<\/td>/";
 	// $pattern = "|<td>\s*(.*?)\s*</td>\s*<td>\s*(.*?)\s*</td>\s*<td>\s*(.*?)\s*</td>\s*<td>\s*(.*?)\s*</td>|";
 	preg_match_all($pattern, $inputHtml, $matches, PREG_SET_ORDER);
-	// print_array($matches);
+	print_array($matches);
 
 	$answers = array();
 	foreach ($matches as $match) {
@@ -25,12 +25,14 @@
 		array_push($answers[$category], $data);
 	}
 
+	// print_array($answers);
 	ksort($answers);// sorting array of arrays by first element
 	foreach ($answers as $category => $item) {
 		usort($answers[$category], 'sorter');
 	}
 	echo json_encode($answers);
-
+	// echo '--------------';
+	// print_array($answers);
 
 
 

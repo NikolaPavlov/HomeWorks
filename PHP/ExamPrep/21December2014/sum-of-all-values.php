@@ -7,23 +7,24 @@
 
 	preg_match('/^[a-zA-Z_]+/',$keyString, $startKeys);
 	preg_match('/[a-zA-Z_]+$/', $keyString, $endKeys);
-	$startKey = $startKeys[0];
-	$endKey = $endKeys[0];
-	echo $startKey . '<br>';
-	echo $endKey;
 
-	$patternText = $startKey . '[0-9.]+' . $endKey;
-	$patternText = '\'/' . $patternText . '/\'';
-	echo '<br>';
-	echo $patternText;
-	// preg_match_all('/startKEY[0-9.]+endKEY/', $textString, $matches);
-	preg_match_all($patternText, $textString, $matches);
-	echo '<br>';
-
-	print_array($matches);
-
-
-
+	if (empty($startKeys) || empty($endKeys)) {
+		die('<p>A key is missing</p>');
+	} else {
+		$startKey = $startKeys[0];
+		$endKey = $endKeys[0];
+		$patternText = $startKey . '([0-9.]+)' . $endKey;
+		$patternText = '/' . $patternText . '/';
+		preg_match_all($patternText, $textString, $matches);
+		$sum = 0;
+		foreach ($matches[1] as $num) {
+			$sum += $num;
+		}
+		if (empty($matches[1]) || $sum == 0) {
+			die('<p>The total value is: <em>nothing</em></p>');
+		}
+		echo "<p>The total value is: <em>$sum</em></p>";
+	}
 
 
 

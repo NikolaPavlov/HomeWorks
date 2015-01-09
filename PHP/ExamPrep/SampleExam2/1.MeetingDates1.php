@@ -1,5 +1,7 @@
 <?php 
 
+	//90/100pts
+
 	date_default_timezone_set('Europe/Sofia'); //---> set default timezone
 	
 	$dateOne = $_GET['dateOne'];

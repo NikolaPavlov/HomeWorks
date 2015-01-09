@@ -1,15 +1,18 @@
 <?php 
 	
+	// 70/100pts
+
 	// The board should be 8x8
 	// Allow pieces are R, H, B, K, Q, P
 
 $board = $_GET['board'];
+// echo $board;
 if (!isset($board)) {
 	invalidBoard();
 }
 // Split board into rows
 $rows = preg_split('/\//', $board);
-
+// print_array($rows);
 if (count($rows) != 8) {
 	invalidBoard();
 }
@@ -21,10 +24,10 @@ foreach ($rows as $row) {
 	if (count($cells) != 8) {
 		invalidBoard();
 	}
+	// echo $row . '<br>';
 	array_push($answersTable, $row);
 	// Check every cell value
 	foreach ($cells as $cell) {
-		print_array($cell);
 		checkPices($cell);
 		array_push($answersTable, $cell);
 	}
@@ -35,18 +38,21 @@ foreach ($rows as $row) {
 echo "<table>";
 for ($i=0; $i < 72; $i+=9) { 
 	echo '<tr>';
-	for ($j=0; $j < 16; $j+=2) {	
-		echo '<td>'. $answersTable[$i][$j] . '</td>';
+	for ($j=0; $j < 16; $j+=2) {
+		
+			echo '<td>'. $answersTable[$i][$j] . '</td>';
+		
 	}
 	echo '</tr>';
 }
 echo "</table>";
+// print_array($answersTable);
+// var_dump($answersTable);
 
 
 
 
 function checkPices($cell) {
-	global $allowSymbols;
 	global $answers;
 	if ($cell == 'R') {
 		if (!isset($answers['Rook'])) {
@@ -95,7 +101,9 @@ function checkPices($cell) {
 			$answers['Pawn']++;
 		}
 	} 
-	
+	if ($cell == '-') {
+		continue;
+	} 
 }
 
 ksort($answers);
