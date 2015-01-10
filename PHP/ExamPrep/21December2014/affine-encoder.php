@@ -1,5 +1,7 @@
 <?php 
 
+	//Unfinished
+
 	// E(x) = (k*x +s) % m
 	// m = the size of the current alphabet
 	// x = position of the char in alphabet started from 0

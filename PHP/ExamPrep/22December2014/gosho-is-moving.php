@@ -1,4 +1,7 @@
 <?php 
+
+	//Unfinished
+
 /*
 	//[luggage type];[room];[name];[weight]"
 	

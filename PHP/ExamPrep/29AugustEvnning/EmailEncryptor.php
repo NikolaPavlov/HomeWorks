@@ -1,5 +1,7 @@
 <?php 
 
+	//100/100pts
+
 	$recipient = htmlspecialchars($_GET['recipient']);
 	$subject = htmlspecialchars($_GET['subject']);
 	$body = htmlspecialchars($_GET['body']);

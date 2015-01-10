@@ -1,10 +1,12 @@
 <?php 
+
+	// 85/100pts
 	
 	$inputHtml = $_GET['priceList'];
 	$pattern = "/<td>\s*(.*?)\s*<\/td>\s*<td>\s*(.*?)\s*<\/td>\s*<td>\s*(.*?)\s*<\/td>\s*<td>\s*(.*?)\s*<\/td>/";
 	// $pattern = "|<td>\s*(.*?)\s*</td>\s*<td>\s*(.*?)\s*</td>\s*<td>\s*(.*?)\s*</td>\s*<td>\s*(.*?)\s*</td>|";
 	preg_match_all($pattern, $inputHtml, $matches, PREG_SET_ORDER);
-	print_array($matches);
+	// print_array($matches);
 
 	$answers = array();
 	foreach ($matches as $match) {

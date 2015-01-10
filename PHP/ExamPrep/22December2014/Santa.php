@@ -1,4 +1,6 @@
 <?php 
+
+	// 100/100pts
 	
 	// "$giftOf[child name] = $[wasChildGood] ? '[wanted present]' : '[picked riddle]';"
 

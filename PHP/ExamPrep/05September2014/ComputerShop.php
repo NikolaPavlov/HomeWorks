@@ -34,6 +34,7 @@
 		}
 	}
 
+print_array($products);
 usort($products, 'sorter');
 if ($order == 'descending') {
 	$products = array_reverse($products);
