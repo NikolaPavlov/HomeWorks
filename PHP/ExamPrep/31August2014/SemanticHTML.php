@@ -16,7 +16,6 @@
 	preg_match_all($openTagsPattern, $html, $openTags);
 	// print_array($matches);
 
-	
 		$matchName = $openTags[1][0];
 		$matchTag = $openTags[3][0];
 		// echo $matchName;
@@ -26,11 +25,6 @@
 		$html = preg_replace('/ >/', '>', $html);
 		$html = preg_replace('/[^\S\n]+/', ' ', $html);
 	
-
-
-
-
-
 	// Find all closing tags with regex
 	$closingTagsPattern = "/<!--\s*(\w+?)\s*-->/";
 	preg_match_all($closingTagsPattern, $html, $closingTags);
@@ -39,9 +33,6 @@
 		$closingTagForReplace = $closingTags[0][$key];
 		$html = str_replace($closingTagForReplace, '', $html);
 	}
-	
-	
-	
 	
 	echo $html;
 

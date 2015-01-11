@@ -1,5 +1,7 @@
 <?php 
 
+	// 100/100pts
+
 	//result is integer number
 	//automaticly get id number
 	//when we can't sort by certain criteria, sort by id should be performed

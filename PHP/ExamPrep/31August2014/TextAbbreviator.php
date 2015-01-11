@@ -1,5 +1,7 @@
 <?php 
 
+	// 100/100pts
+
 	$list = $_GET['list'];
 	$maxSize = $_GET['maxSize'];
 

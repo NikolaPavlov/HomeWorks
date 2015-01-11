@@ -1,0 +1,61 @@
+/<?php 
+// date_default_timezone_set('Europe/Sofia'); ---> set default timezone
+// ------------------------------------------------------------------
+// Build in functions:
+// phpinfo() ---> build in function for display php properties
+// echo gettype($var) ---> get variable type
+	// 1.String functions
+// preg_match('/x/', $string); ---> return array with splited words
+// str_word_count($string, 0); ---> return string word count
+// str_word_count($string, 1); ---> return associative array with words
+// str_word_count($string, 2); 
+// strlen($var); ---> string length
+// str_reverse($var); ---> reverse string
+// trim($var) ---> trim whitespaces
+// substr(string, start) ---> get part of the string
+// strtolower($var) ---> string to lower case
+// strtoupper($var) ---> string to upper case
+// ctype_**** ---> strings checks Upper Lower etc.
+	// 2.Array functions
+// 2.1 Array
+// 2.2 Associative array
+// 2.5 Sorting arrays
+// usort($arr, cmp_function) ---> usort with cmp_function return 1 -1 or 0
+// 2.7 Split arrays
+// preg_match_all($pattern, $inputHtml, $matches, PREG_SET_ORDER);
+
+// 	3.Math functions
+// min($val, val2) ---> return the minimal value
+// =============================================
+// other
+// array_count_values($arr) ---> return array with the $arr values as keys and frequency of elements as values;
+// number_format(number) ---> formating the numbers
+//ord - return the ASCII value of charackter
+//chr - convert int into ASCII symbol
+// preg_replace(pattern, replacement, subject)
+// preg_replace_callback(pattern, callback, subject)
+// strtotime(time) ---> convert string into unix time stamp(working with format m-d-Y)(separator should be '/')
+// strtotime('-5 years', $today) ---> subtract 5years from $today
+// in_array ---> check if value exists in arr
+// array_key_exists ---> check if key exists in arr
+// $answers = array_map('callbackFunction', array) ---> apply the function to all elements of arr and return values in $answers array
+// array_filter
+// array_multisort
+
+
+
+
+//=========Print Array=========//
+// function print_array($aArray) {
+//   echo '<pre>';
+//   print_r($aArray);
+//   echo '</pre>';
+// }
+
+//=========Convert To UK=========//
+// function toUkTimeStamp($days, $months, $years){
+// 	$timeStamp = "$months/$days/$years";
+// 	return strtotime($timeStamp);
+// }
+
+?>

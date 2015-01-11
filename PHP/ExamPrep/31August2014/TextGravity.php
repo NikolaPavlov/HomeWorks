@@ -1,5 +1,7 @@
 <?php 
 
+	// 100/100pts
+
 	$textAsString = $_GET['text'];
 	$lineLength = $_GET['lineLength'];
 

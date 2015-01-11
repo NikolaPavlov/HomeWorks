@@ -1,5 +1,7 @@
 <?php 
 
+	// 100/100pts
+
 	$text = $_GET['text'];
 	$blacklist = $_GET['blacklist'];
 	

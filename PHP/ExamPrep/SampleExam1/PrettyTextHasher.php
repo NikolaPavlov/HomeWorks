@@ -1,5 +1,7 @@
 <?php 
 
+	// 100/100pts
+
 	$text = $_GET['text'];
 	$hashValue = $_GET['hashValue'];
 	$fontSize = $_GET['fontSize'];

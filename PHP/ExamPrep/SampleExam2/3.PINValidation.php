@@ -1,5 +1,7 @@
 <?php 
 
+	// 90/100pts
+
 	date_default_timezone_set('Europe/Sofia');
 	
 	$name = $_GET['name'];
