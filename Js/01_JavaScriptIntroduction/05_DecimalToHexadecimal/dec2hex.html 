@@ -1,9 +1,0 @@
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>DecToHex</title>
-</head>
-<body>
-	<script src="dec2hex.js"></script>
-</body>
-</html>

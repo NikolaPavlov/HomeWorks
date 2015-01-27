@@ -1,0 +1,6 @@
+C:\Users\gh\documents\visual studio 2013\Projects\DefiningClasses\Persons\bin\Debug\Persons.exe.config
+C:\Users\gh\documents\visual studio 2013\Projects\DefiningClasses\Persons\obj\Debug\Persons.exe
+C:\Users\gh\documents\visual studio 2013\Projects\DefiningClasses\Persons\obj\Debug\Persons.pdb
+C:\Users\gh\documents\visual studio 2013\Projects\DefiningClasses\Persons\bin\Debug\Persons.exe
+C:\Users\gh\documents\visual studio 2013\Projects\DefiningClasses\Persons\bin\Debug\Persons.pdb
+C:\Users\gh\documents\visual studio 2013\Projects\DefiningClasses\Persons\obj\Debug\01_Persons.csprojResolveAssemblyReference.cache
