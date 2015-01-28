@@ -1,0 +1,8 @@
+C:\Users\gh\documents\visual studio 2013\Projects\NamespacesAndStaticFields\02_DistanceCalculator\bin\Debug\02_DistanceCalculator.exe.config
+C:\Users\gh\documents\visual studio 2013\Projects\NamespacesAndStaticFields\02_DistanceCalculator\bin\Debug\02_DistanceCalculator.exe
+C:\Users\gh\documents\visual studio 2013\Projects\NamespacesAndStaticFields\02_DistanceCalculator\bin\Debug\02_DistanceCalculator.pdb
+C:\Users\gh\documents\visual studio 2013\Projects\NamespacesAndStaticFields\02_DistanceCalculator\bin\Debug\01_Point3D.exe
+C:\Users\gh\documents\visual studio 2013\Projects\NamespacesAndStaticFields\02_DistanceCalculator\bin\Debug\01_Point3D.pdb
+C:\Users\gh\documents\visual studio 2013\Projects\NamespacesAndStaticFields\02_DistanceCalculator\obj\Debug\02_DistanceCalculator.csprojResolveAssemblyReference.cache
+C:\Users\gh\documents\visual studio 2013\Projects\NamespacesAndStaticFields\02_DistanceCalculator\obj\Debug\02_DistanceCalculator.exe
+C:\Users\gh\documents\visual studio 2013\Projects\NamespacesAndStaticFields\02_DistanceCalculator\obj\Debug\02_DistanceCalculator.pdb
