@@ -1,6 +1,0 @@
-C:\Users\gh\documents\visual studio 2013\Projects\NamespacesAndStaticFields\01_Point3D\bin\Debug\01_Point3D.exe.config
-C:\Users\gh\documents\visual studio 2013\Projects\NamespacesAndStaticFields\01_Point3D\bin\Debug\01_Point3D.exe
-C:\Users\gh\documents\visual studio 2013\Projects\NamespacesAndStaticFields\01_Point3D\bin\Debug\01_Point3D.pdb
-C:\Users\gh\documents\visual studio 2013\Projects\NamespacesAndStaticFields\01_Point3D\obj\Debug\01_Point3D.csprojResolveAssemblyReference.cache
-C:\Users\gh\documents\visual studio 2013\Projects\NamespacesAndStaticFields\01_Point3D\obj\Debug\01_Point3D.exe
-C:\Users\gh\documents\visual studio 2013\Projects\NamespacesAndStaticFields\01_Point3D\obj\Debug\01_Point3D.pdb

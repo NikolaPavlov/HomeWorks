@@ -1,0 +1,9 @@
+C:\Users\gh\documents\visual studio 2013\Projects\NamespacesAndStaticFields\06_Namespaces\bin\Debug\06_Namespaces.exe.config
+C:\Users\gh\documents\visual studio 2013\Projects\NamespacesAndStaticFields\06_Namespaces\bin\Debug\06_Namespaces.exe
+C:\Users\gh\documents\visual studio 2013\Projects\NamespacesAndStaticFields\06_Namespaces\bin\Debug\06_Namespaces.pdb
+C:\Users\gh\documents\visual studio 2013\Projects\NamespacesAndStaticFields\06_Namespaces\obj\Debug\06_Namespaces.csprojResolveAssemblyReference.cache
+C:\Users\gh\documents\visual studio 2013\Projects\NamespacesAndStaticFields\06_Namespaces\obj\Debug\06_Namespaces.exe
+C:\Users\gh\documents\visual studio 2013\Projects\NamespacesAndStaticFields\06_Namespaces\obj\Debug\06_Namespaces.pdb
+C:\Users\gh\Documents\Visual Studio 2013\Projects\02_NamespacesAndStaticFields\06_Namespaces\bin\Debug\06_Namespaces.exe.config
+C:\Users\gh\Documents\Visual Studio 2013\Projects\02_NamespacesAndStaticFields\06_Namespaces\obj\Debug\06_Namespaces.exe
+C:\Users\gh\Documents\Visual Studio 2013\Projects\02_NamespacesAndStaticFields\06_Namespaces\obj\Debug\06_Namespaces.pdb

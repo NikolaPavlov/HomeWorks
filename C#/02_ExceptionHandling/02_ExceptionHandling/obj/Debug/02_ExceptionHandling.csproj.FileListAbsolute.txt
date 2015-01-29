@@ -1,0 +1,6 @@
+c:\users\gh\documents\visual studio 2013\Projects\02_ExceptionHandling\02_ExceptionHandling\bin\Debug\02_ExceptionHandling.exe.config
+c:\users\gh\documents\visual studio 2013\Projects\02_ExceptionHandling\02_ExceptionHandling\bin\Debug\02_ExceptionHandling.exe
+c:\users\gh\documents\visual studio 2013\Projects\02_ExceptionHandling\02_ExceptionHandling\bin\Debug\02_ExceptionHandling.pdb
+c:\users\gh\documents\visual studio 2013\Projects\02_ExceptionHandling\02_ExceptionHandling\obj\Debug\02_ExceptionHandling.csprojResolveAssemblyReference.cache
+c:\users\gh\documents\visual studio 2013\Projects\02_ExceptionHandling\02_ExceptionHandling\obj\Debug\02_ExceptionHandling.exe
+c:\users\gh\documents\visual studio 2013\Projects\02_ExceptionHandling\02_ExceptionHandling\obj\Debug\02_ExceptionHandling.pdb
