@@ -1,0 +1,6 @@
+c:\users\gh\documents\visual studio 2013\Projects\03_InheritanceAndAbstraction\01_School\bin\Debug\01_School.exe.config
+c:\users\gh\documents\visual studio 2013\Projects\03_InheritanceAndAbstraction\01_School\bin\Debug\01_School.exe
+c:\users\gh\documents\visual studio 2013\Projects\03_InheritanceAndAbstraction\01_School\bin\Debug\01_School.pdb
+c:\users\gh\documents\visual studio 2013\Projects\03_InheritanceAndAbstraction\01_School\obj\Debug\01_School.csprojResolveAssemblyReference.cache
+c:\users\gh\documents\visual studio 2013\Projects\03_InheritanceAndAbstraction\01_School\obj\Debug\01_School.exe
+c:\users\gh\documents\visual studio 2013\Projects\03_InheritanceAndAbstraction\01_School\obj\Debug\01_School.pdb

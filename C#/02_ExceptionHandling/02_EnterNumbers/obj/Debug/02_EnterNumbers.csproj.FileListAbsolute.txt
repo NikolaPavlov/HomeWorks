@@ -4,3 +4,6 @@ C:\Users\gh\documents\visual studio 2013\Projects\02_ExceptionHandling\02_EnterN
 C:\Users\gh\documents\visual studio 2013\Projects\02_ExceptionHandling\02_EnterNumbers\obj\Debug\02_EnterNumbers.csprojResolveAssemblyReference.cache
 C:\Users\gh\documents\visual studio 2013\Projects\02_ExceptionHandling\02_EnterNumbers\obj\Debug\02_EnterNumbers.exe
 C:\Users\gh\documents\visual studio 2013\Projects\02_ExceptionHandling\02_EnterNumbers\obj\Debug\02_EnterNumbers.pdb
+C:\Users\gh\Documents\HomeWorks\C#\02_ExceptionHandling\02_EnterNumbers\bin\Debug\02_EnterNumbers.exe.config
+C:\Users\gh\Documents\HomeWorks\C#\02_ExceptionHandling\02_EnterNumbers\obj\Debug\02_EnterNumbers.exe
+C:\Users\gh\Documents\HomeWorks\C#\02_ExceptionHandling\02_EnterNumbers\obj\Debug\02_EnterNumbers.pdb
