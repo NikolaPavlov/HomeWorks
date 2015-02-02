@@ -34,6 +34,8 @@ namespace _01_School
             myClass.AddTeacher(proTeacher);
             myClass.AddTeacher(weakTeacher);
             //Console.WriteLine(myClass.ToString());
+
+            students[0].Details("details about student");
         }
     }
 }

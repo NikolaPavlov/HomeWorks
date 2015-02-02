@@ -1,0 +1,6 @@
+C:\Users\gh\documents\visual studio 2013\Projects\03_InheritanceAndAbstraction\04_CompanyHierarchy\bin\Debug\04_CompanyHierarchy.exe.config
+C:\Users\gh\Documents\Visual Studio 2013\Projects\03_InheritanceAndAbstraction\04_CompanyHierarchy\bin\Debug\04_CompanyHierarchy.exe
+C:\Users\gh\Documents\Visual Studio 2013\Projects\03_InheritanceAndAbstraction\04_CompanyHierarchy\bin\Debug\04_CompanyHierarchy.pdb
+C:\Users\gh\Documents\Visual Studio 2013\Projects\03_InheritanceAndAbstraction\04_CompanyHierarchy\obj\Debug\04_CompanyHierarchy.exe
+C:\Users\gh\Documents\Visual Studio 2013\Projects\03_InheritanceAndAbstraction\04_CompanyHierarchy\obj\Debug\04_CompanyHierarchy.pdb
+C:\Users\gh\Documents\Visual Studio 2013\Projects\03_InheritanceAndAbstraction\04_CompanyHierarchy\obj\Debug\04_CompanyHierarchy.csprojResolveAssemblyReference.cache
