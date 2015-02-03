@@ -9,13 +9,13 @@ namespace _01_School
         List<Discipline> disciplines = new List<Discipline>();
 
         // Constructors
-        public Teacher(string name)
-            : base(name)
+        public Teacher(string name, string details = null)
+            : base(name, details)
         {
         }
 
-        public Teacher(string name, List<Discipline> disciplines) 
-            : base(name)
+        public Teacher(string name, List<Discipline> disciplines, string details) 
+            : base(name, details)
         {
             this.disciplines = disciplines;
         }
@@ -32,9 +32,15 @@ namespace _01_School
             string str = "";
             str += "Teacher: " + base.Name + "\n";
             str += base.Name + " teach these disciplines:" + "\n";
+
             foreach (Discipline discipline in disciplines)
             {
                 str += discipline.DisciplineName + "\n";
+            }
+
+            if (base.Details != null)
+            {
+                str += "Details about this teacher: " + base.Details; 
             }
 
             return str;

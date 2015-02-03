@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using _04_CompanyHierarchy.SalesAndProjects;
+using _04_CompanyHierarchy.EmployeesAndCustomers;
 
 namespace _04_CompanyHierarchy
 {

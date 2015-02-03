@@ -24,8 +24,8 @@ namespace _01_School
         }
 
         // Constructor
-        public Student(string name, int classNumber)
-            : base(name)
+        public Student(string name, int classNumber, string details = null)
+            : base(name, details)
         {
             this.ClassNumber = classNumber;
         }
@@ -33,7 +33,15 @@ namespace _01_School
         // ToString
         public override string ToString()
         {
-            return base.Name + " No:" + this.ClassNumber;
+            string str = "";
+            str += base.Name + " No:" + this.ClassNumber;
+
+            if (base.Details != null)
+            {
+                str += "\nDetails about this student: " + base.Details; 
+            }
+            
+            return str;
         }
     }
 }

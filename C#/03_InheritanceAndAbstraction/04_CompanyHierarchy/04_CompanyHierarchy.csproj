@@ -41,15 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customer.cs" />
-    <Compile Include="Developer.cs" />
-    <Compile Include="Employee.cs" />
-    <Compile Include="Manager.cs" />
-    <Compile Include="Person.cs" />
+    <Compile Include="EmployeesAndCustomers\Customer.cs" />
+    <Compile Include="EmployeesAndCustomers\Developer.cs" />
+    <Compile Include="EmployeesAndCustomers\Employee.cs" />
+    <Compile Include="EmployeesAndCustomers\ICustomer.cs" />
+    <Compile Include="EmployeesAndCustomers\IDeveloper.cs" />
+    <Compile Include="EmployeesAndCustomers\IEmployee.cs" />
+    <Compile Include="EmployeesAndCustomers\IManager.cs" />
+    <Compile Include="EmployeesAndCustomers\IPerson.cs" />
+    <Compile Include="EmployeesAndCustomers\ISalesEmployee.cs" />
+    <Compile Include="EmployeesAndCustomers\Manager.cs" />
+    <Compile Include="EmployeesAndCustomers\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SalesAndProjects\Project.cs" />
     <Compile Include="SalesAndProjects\Sale.cs" />
-    <Compile Include="SalesEmployee.cs" />
+    <Compile Include="EmployeesAndCustomers\SalesEmployee.cs" />
     <Compile Include="Test.cs" />
   </ItemGroup>
   <ItemGroup>

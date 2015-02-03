@@ -26,7 +26,6 @@ namespace _01_School
                 this.disciplineName = value;
             }
         }
-
         public int NumberOfLectures
         {
             get
@@ -44,14 +43,15 @@ namespace _01_School
         }
 
         // Constructors
-        public Discipline(string disciplineName, int numberOfLectures)
+        public Discipline(string disciplineName, int numberOfLectures, string details = null)
+            : base(details)
         {
             this.DisciplineName = disciplineName;
             this.NumberOfLectures = numberOfLectures;
         } 
 
-        public Discipline(string disciplineName, int numberOfLectures, List<Student> students) 
-            : this(disciplineName, numberOfLectures)
+        public Discipline(string disciplineName, int numberOfLectures, List<Student> students, string details = null)
+            : this(disciplineName, numberOfLectures, details)
         {
             this.students = students;
         }
@@ -69,10 +69,17 @@ namespace _01_School
             str += "Discipline: " + this.DisciplineName + "\n";
             str += "Number of lectures in "+ this.DisciplineName + " " + this.NumberOfLectures + "\n";
             str += "Students in " + this.DisciplineName + ":" + "\n";
+
             foreach (Student student in this.students)
             {
                 str += student.ToString() + "\n";
             }
+
+            if (base.Details != null)
+            {
+                str += "Details about this discipline: " + base.Details; 
+            }
+
             return str;
         }
     }

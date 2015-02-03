@@ -5,6 +5,13 @@
 
     abstract public class School
     {
+        private string details = null;
+
         public string Details { get; set; }
+
+        public School(string details)
+        {
+            this.Details = details; 
+        }
     }
 }

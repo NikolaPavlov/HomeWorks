@@ -24,7 +24,8 @@ namespace _01_School
         }
 
         // Constructor
-        public People(string name)
+        public People(string name, string details = null)
+            : base(details)
         {
             this.Name = name;
         }
@@ -32,7 +33,15 @@ namespace _01_School
         //ToString
         public override string ToString()
         {
-            return this.Name;
+            string str = "";
+            str += this.Name;
+
+            if (base.Details != null)
+            {
+                str += "\nDetails: " + base.Details; 
+            }
+
+            return str;
         }
     }
 }

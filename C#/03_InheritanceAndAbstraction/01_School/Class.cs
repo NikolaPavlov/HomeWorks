@@ -26,14 +26,15 @@ namespace _01_School
             }
         }
 
-        // Constructor
-        public Class(string textId)
+        // Constructors
+        public Class(string textId, string details = null) 
+            : base(details)
         {
             this.TextId = textId;
         }
 
-        public Class(string textId, List<Teacher> teachers)
-            : this(textId)
+        public Class(string textId, List<Teacher> teachers, string details = null)
+            : this(textId, details)
         {
             this.teachers = teachers;
         }
@@ -50,12 +51,18 @@ namespace _01_School
             string str = "";
             str += "Class Uniq ID: " + this.TextId + "\n";
             str += "Teachers for class with class id: " + this.TextId + ":\n";
+
             foreach (Teacher teacher in this.teachers)
             {
                 str += teacher.Name + "\n";     
             }
+
+            if (base.Details != null)
+            {
+                str += "Details about this class:" + base.Details; 
+            }
+
             return str;
         }
-
     }
 }

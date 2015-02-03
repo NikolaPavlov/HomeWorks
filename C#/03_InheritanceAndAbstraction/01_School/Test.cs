@@ -35,7 +35,9 @@ namespace _01_School
             myClass.AddTeacher(weakTeacher);
             //Console.WriteLine(myClass.ToString());
 
-            students[0].Details("details about student");
+            // *details Test
+            Student zeratul = new Student("ioks", 121212, "details student test");
+            //Console.WriteLine(zeratul.ToString());
         }
     }
 }
