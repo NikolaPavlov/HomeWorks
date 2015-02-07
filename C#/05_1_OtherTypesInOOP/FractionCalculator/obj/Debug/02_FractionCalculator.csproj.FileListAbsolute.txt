@@ -1,0 +1,6 @@
+C:\Users\gh\documents\visual studio 2013\Projects\04_OtherTypesInOOP\FractionCalculator\bin\Debug\FractionCalculator.exe.config
+C:\Users\gh\documents\visual studio 2013\Projects\04_OtherTypesInOOP\FractionCalculator\obj\Debug\FractionCalculator.exe
+C:\Users\gh\documents\visual studio 2013\Projects\04_OtherTypesInOOP\FractionCalculator\obj\Debug\FractionCalculator.pdb
+C:\Users\gh\Documents\Visual Studio 2013\Projects\05_1_OtherTypesInOOP\FractionCalculator\bin\Debug\FractionCalculator.exe.config
+C:\Users\gh\Documents\Visual Studio 2013\Projects\05_1_OtherTypesInOOP\FractionCalculator\obj\Debug\FractionCalculator.exe
+C:\Users\gh\Documents\Visual Studio 2013\Projects\05_1_OtherTypesInOOP\FractionCalculator\obj\Debug\FractionCalculator.pdb

@@ -39,6 +39,5 @@ namespace _02_HumanStudentAndWorker
         {
             return base.ToString() + " " + this.FaultyNumber;
         }
-            
     }
 }

@@ -43,36 +43,36 @@ namespace _02_HumanStudentAndWorker
             };
 
             // Sort students by fNumber
-            var studentsSorted = students.OrderBy(s => s.FaultyNumber);
-            string orderedStudentsStr = "Sorted students: \n";
-            foreach (Student student in studentsSorted)
+            var sortedStudentsByFacNumber = students.OrderBy(s => s.FaultyNumber);
+            foreach (var student in sortedStudentsByFacNumber)
             {
-                orderedStudentsStr += student.ToString() + "\n";
+                Console.WriteLine(student.ToString()); 
             }
-            //Console.WriteLine(orderedStudentsStr);
 
-            // Sort workers by payment per hour in descending order
-            var workersSorted = workers.OrderBy(w => w.MoneyPerHour());
-            string orderedWorkersStr = "Sorted workers: \n";
-            foreach (Worker worker in workersSorted)
+            Console.WriteLine(new String('-', 50));
+
+            // Sorted workers by pay per hour
+            var sortedWorkersByPaymentPerHour = workers.OrderBy(w => w.MoneyPerHour());
+            foreach (var worker in sortedStudentsByFacNumber)
             {
-                orderedWorkersStr += worker.ToString() + "\n"; 
+                Console.WriteLine(worker.ToString()); 
             }
-            //Console.WriteLine(orderedWorkersStr);
 
-            // Merge the lists and sort the new one
-            var mergeHumans = new List<Human>();
-            mergeHumans.AddRange(students);
-            mergeHumans.AddRange(workers);
-            var sortedMergedHumans = mergeHumans
-                .OrderBy(h => h.FirstName)
-                .ThenBy(h => h.LastName)
-                .Select(h => h.FirstName + " " + h.LastName);
+            Console.WriteLine(new String('-', 50));
 
-            foreach (var human in sortedMergedHumans)
+            // Merge humans
+            var humans = new List<Human>();
+            humans.AddRange(students);
+            humans.AddRange(workers);
+            // Sort humans list by first name then by last name
+            var humansSorted = humans.OrderBy(h => h.FirstName).ThenBy(h => h.LastName);
+
+            foreach (var human in humansSorted)
             {
-                Console.WriteLine(human.ToString()); 
+                Console.WriteLine(human.FirstName + " " + human.LastName);
             }
+
+            Console.WriteLine(new String('-', 50));
         }
     }
 }

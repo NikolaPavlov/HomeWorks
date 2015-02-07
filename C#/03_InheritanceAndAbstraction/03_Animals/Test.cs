@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _03_Animals
 {
@@ -23,7 +21,21 @@ namespace _03_Animals
             };
             
             // Calculate the average age of each kind of animals
+            var averageAge = from an in animals
+                group an by new
+                {
+                    GroupName = an.GetType().Name
+                }
+                into gender select new
+                {
+                    gender.Key.GroupName,
+                    AvarageAge = gender.Average(an => an.Age)
+                };
 
+                foreach (var animal in averageAge)
+                {
+                    Console.WriteLine(String.Format("Group: {0}, AvarageAge: {1:0.00}.", animal.GroupName, animal.AvarageAge));
+                }
         }
     }
 }

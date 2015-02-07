@@ -25,7 +25,6 @@ namespace _02_HumanStudentAndWorker
                 this.weekSalary = value;
             }
         }
-
         public decimal WorkHoursPerDay
         {
             get

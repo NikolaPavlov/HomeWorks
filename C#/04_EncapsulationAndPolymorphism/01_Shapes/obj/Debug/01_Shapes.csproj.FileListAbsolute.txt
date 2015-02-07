@@ -1,0 +1,9 @@
+c:\users\gh\documents\visual studio 2013\Projects\Solution1\01_Shapes\bin\Debug\01_Shapes.exe.config
+c:\users\gh\documents\visual studio 2013\Projects\Solution1\01_Shapes\obj\Debug\01_Shapes.csprojResolveAssemblyReference.cache
+c:\users\gh\documents\visual studio 2013\Projects\Solution1\01_Shapes\bin\Debug\01_Shapes.exe
+c:\users\gh\documents\visual studio 2013\Projects\Solution1\01_Shapes\bin\Debug\01_Shapes.pdb
+c:\users\gh\documents\visual studio 2013\Projects\Solution1\01_Shapes\obj\Debug\01_Shapes.exe
+c:\users\gh\documents\visual studio 2013\Projects\Solution1\01_Shapes\obj\Debug\01_Shapes.pdb
+C:\Users\gh\Documents\Visual Studio 2013\Projects\04_EncapsulationAndPolymorphism\01_Shapes\bin\Debug\01_Shapes.exe.config
+C:\Users\gh\Documents\Visual Studio 2013\Projects\04_EncapsulationAndPolymorphism\01_Shapes\obj\Debug\01_Shapes.exe
+C:\Users\gh\Documents\Visual Studio 2013\Projects\04_EncapsulationAndPolymorphism\01_Shapes\obj\Debug\01_Shapes.pdb

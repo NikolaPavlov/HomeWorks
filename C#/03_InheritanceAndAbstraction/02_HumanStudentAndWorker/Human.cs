@@ -21,12 +21,11 @@ abstract class Human
             this.firstName = value;
         }
     }
-
     public string LastName
     {
         get
         {
-            return this.firstName;
+            return this.lastName;
         }
         set
         {
