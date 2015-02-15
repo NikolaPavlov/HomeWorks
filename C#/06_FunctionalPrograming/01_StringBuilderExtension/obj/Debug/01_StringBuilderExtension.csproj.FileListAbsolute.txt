@@ -1,0 +1,11 @@
+C:\Users\gh\documents\visual studio 2013\Projects\06_FunctionalPrograming\01_StringBuilderExtension\bin\Debug\01_StringBuilderExtension.exe.config
+C:\Users\gh\documents\visual studio 2013\Projects\06_FunctionalPrograming\01_StringBuilderExtension\bin\Debug\01_StringBuilderExtension.exe
+C:\Users\gh\documents\visual studio 2013\Projects\06_FunctionalPrograming\01_StringBuilderExtension\bin\Debug\01_StringBuilderExtension.pdb
+C:\Users\gh\documents\visual studio 2013\Projects\06_FunctionalPrograming\01_StringBuilderExtension\obj\Debug\01_StringBuilderExtension.exe
+C:\Users\gh\documents\visual studio 2013\Projects\06_FunctionalPrograming\01_StringBuilderExtension\obj\Debug\01_StringBuilderExtension.pdb
+C:\Users\gh\Desktop\HomeWorks\C#\06_FunctionalPrograming\01_StringBuilderExtension\bin\Debug\01_StringBuilderExtension.exe.config
+C:\Users\gh\Desktop\HomeWorks\C#\06_FunctionalPrograming\01_StringBuilderExtension\obj\Debug\01_StringBuilderExtension.exe
+C:\Users\gh\Desktop\HomeWorks\C#\06_FunctionalPrograming\01_StringBuilderExtension\obj\Debug\01_StringBuilderExtension.pdb
+C:\Users\gh\Desktop\HomeWorks\C#\06_FunctionalPrograming\01_StringBuilderExtension\bin\Debug\01_StringBuilderExtension.exe
+C:\Users\gh\Desktop\HomeWorks\C#\06_FunctionalPrograming\01_StringBuilderExtension\bin\Debug\01_StringBuilderExtension.pdb
+C:\Users\gh\Desktop\HomeWorks\C#\06_FunctionalPrograming\01_StringBuilderExtension\obj\Debug\01_StringBuilderExtension.csprojResolveAssemblyReference.cache

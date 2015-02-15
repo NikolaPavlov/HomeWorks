@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5587AACD-B476-428A-8291-843133204CA2}</ProjectGuid>
+    <ProjectGuid>{B99043BD-B3F7-4358-8935-1CA1CA715C85}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_01_StringBuilderExtensions</RootNamespace>
-    <AssemblyName>01_StringBuilderExtensions</AssemblyName>
+    <RootNamespace>_01_StringBuilderExtension</RootNamespace>
+    <AssemblyName>01_StringBuilderExtension</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,7 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="03_ClassStudent.cs" />
+    <Compile Include="SbExtension.cs" />
+    <Compile Include="SbTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

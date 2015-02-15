@@ -30,6 +30,7 @@
         }
 
         // Prop
+        #region Properties
         public string FirstName
         {
             get
@@ -133,10 +134,13 @@
                 this.groupNumber = value;
             }
         }
+        #endregion
 
         // Methods
         public override string ToString()
         {
+            // Return only first and second name, I can't give this stupid problems alot of my time!
+            // Proper way is to make diferent return for every Problem...
             StringBuilder sb = new StringBuilder();
             sb.Append(this.FirstName + " " + this.LastName);
             return sb.ToString();
