@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SLdie Show</title>
+	<script src="./../jquery/jquery-2.1.3.min.js"></script>
+	<script src="slideSHow.js"></script>
+	<style>
+		#slide-container{
+			overflow: hidden;
+			width: 720px;
+			height: 400px;
+			margin: 0 auto;
+			border: 1px solid black;
+		}
+
+		#slides{
+			display: block;
+			width: 6000px;
+			height: 400px;
+			margin: 0px;
+			padding: 0px;
+		}
+		.slide{
+			list-style-type: none;
+			width: 720px;
+			height: 400px;
+			float: left;
+		}
+
+		.slide1{background-color: white}
+		.slide2{background-color: green}
+		.slide3{background-color: red}
+		.slide4{background-color: blue}
+		.slide5{background-color: yellow}
+	</style>
+</head>
+<body>
+	<div id="slide-container">
+		<ul id="slides">
+			<li class="slide slide1">Some Elements Here 1</li>
+			<li class="slide slide2">Some Elements Here 2</li>
+			<li class="slide slide3">Some Elements Here 3</li>
+			<li class="slide slide4">Some Elements Here 4</li>
+			<li class="slide slide5">Some Elements Here 5</li>
+			<li class="slide slide1">Some Elements Here 1</li>
+		</ul>
+	</div>
+</body>
+</html>

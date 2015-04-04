@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table Generator</title>
+	<script src="./../jquery/jquery-2.1.3.min.js"></script>
+	<script src="tableGenerator.js"></script>
+	<style>
+		#target{
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 50px;
+		}
+		th{
+			background-color: green;
+		}
+		th, td {
+			border:1px solid black;
+			padding: 5px 10px;
+		}
+		table {
+			border-collapse:separate;
+    		border-spacing:0px;
+		}
+	</style>
+</head>
+<body>
+	<textarea cols="55" rows="25" id="text"></textarea>
+	<button id="btn">Parse</button>
+	<div id="target"></div>
+</body>
+</html>
