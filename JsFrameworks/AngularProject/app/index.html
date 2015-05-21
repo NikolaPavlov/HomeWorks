@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="FirstDemoApp">
+<header ng-include="'partials/header.html'"></header>
+<body>
+    <h1>Angular Seed</h1>
+    <div  ng-controller="FirstDemoController">
+        <p>{{msg}}</p>
+        <ul>
+            <li ng-repeat="person in people">{{person.name}} from {{person.town}}</li>
+        </ul>
+    </div>
+    <div ng-controller="SecondDemoController">
+        <ul>
+            <li ng-repeat="name in names">{{name}}</li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="lib/angular/angular.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers/FirstDemoController.js"></script>
+</body>
+</html>
